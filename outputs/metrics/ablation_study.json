@@ -1,0 +1,80 @@
+{
+  "uncertainty_quantile_70pct": {
+    "num_episodes_evaluated": 6,
+    "collision_count": 0,
+    "collision_rate_percent": 0.0,
+    "collisions_per_1000_episodes": 0.0,
+    "near_collision_rate_percent": 0.0,
+    "task_completion_rate_percent": 33.33,
+    "unnecessary_intervention_rate_percent": 0.0,
+    "mean_minimum_separation_meters": 4.322,
+    "std_minimum_separation_meters": 1.564,
+    "mean_emergency_actions_per_ep": 0.0,
+    "mean_elapsed_time_seconds": 5.48
+  },
+  "uncertainty_quantile_90pct": {
+    "num_episodes_evaluated": 6,
+    "collision_count": 0,
+    "collision_rate_percent": 0.0,
+    "collisions_per_1000_episodes": 0.0,
+    "near_collision_rate_percent": 0.0,
+    "task_completion_rate_percent": 33.33,
+    "unnecessary_intervention_rate_percent": 0.0,
+    "mean_minimum_separation_meters": 4.824,
+    "std_minimum_separation_meters": 1.799,
+    "mean_emergency_actions_per_ep": 0.0,
+    "mean_elapsed_time_seconds": 5.48
+  },
+  "uncertainty_quantile_99pct": {
+    "num_episodes_evaluated": 6,
+    "collision_count": 0,
+    "collision_rate_percent": 0.0,
+    "collisions_per_1000_episodes": 0.0,
+    "near_collision_rate_percent": 0.0,
+    "task_completion_rate_percent": 33.33,
+    "unnecessary_intervention_rate_percent": 0.0,
+    "mean_minimum_separation_meters": 5.722,
+    "std_minimum_separation_meters": 2.191,
+    "mean_emergency_actions_per_ep": 0.0,
+    "mean_elapsed_time_seconds": 5.48
+  },
+  "proactive_dist_threshold_1.5m": {
+    "num_episodes_evaluated": 6,
+    "collision_count": 0,
+    "collision_rate_percent": 0.0,
+    "collisions_per_1000_episodes": 0.0,
+    "near_collision_rate_percent": 0.0,
+    "task_completion_rate_percent": 33.33,
+    "unnecessary_intervention_rate_percent": 0.0,
+    "mean_minimum_separation_meters": 4.186,
+    "std_minimum_separation_meters": 1.21,
+    "mean_emergency_actions_per_ep": 0.0,
+    "mean_elapsed_time_seconds": 5.5
+  },
+  "proactive_dist_threshold_2.5m": {
+    "num_episodes_evaluated": 6,
+    "collision_count": 0,
+    "collision_rate_percent": 0.0,
+    "collisions_per_1000_episodes": 0.0,
+    "near_collision_rate_percent": 0.0,
+    "task_completion_rate_percent": 33.33,
+    "unnecessary_intervention_rate_percent": 0.0,
+    "mean_minimum_separation_meters": 4.311,
+    "std_minimum_separation_meters": 1.307,
+    "mean_emergency_actions_per_ep": 0.0,
+    "mean_elapsed_time_seconds": 5.5
+  },
+  "proactive_dist_threshold_4.0m": {
+    "num_episodes_evaluated": 6,
+    "collision_count": 0,
+    "collision_rate_percent": 0.0,
+    "collisions_per_1000_episodes": 0.0,
+    "near_collision_rate_percent": 0.0,
+    "task_completion_rate_percent": 33.33,
+    "unnecessary_intervention_rate_percent": 0.0,
+    "mean_minimum_separation_meters": 4.811,
+    "std_minimum_separation_meters": 1.575,
+    "mean_emergency_actions_per_ep": 0.0,
+    "mean_elapsed_time_seconds": 5.52
+  }
+}

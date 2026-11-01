@@ -1,0 +1,3196 @@
+{
+  "label": "SYNTHETIC_INDIAN_ROAD_SIMULATION",
+  "evaluation_type": "aggregate_matched_policy_evaluation",
+  "threshold_tuning": "none; existing policy thresholds were used unchanged",
+  "validation_seeds": [
+    1101,
+    1102
+  ],
+  "final_test_seeds": [
+    1201,
+    1202,
+    1203
+  ],
+  "episode_count": 45,
+  "scenario_configurations": {
+    "pedestrian_crossing": {
+      "ego_speed": 10.0,
+      "ped_speed": 1.2,
+      "ped_start_distance": 25.0,
+      "crossing_time": 1.0,
+      "has_hesitation": false
+    },
+    "autorickshaw_cut_in": {
+      "ego_speed": 10.0,
+      "cut_in_gap": 8.0,
+      "cut_in_speed": 7.8,
+      "lateral_speed": 2.0,
+      "lateral_offset": 2.5,
+      "cut_in_step": 15
+    },
+    "animal_entry": {
+      "ego_speed": 10.0,
+      "animal_start_distance": 25.0,
+      "animal_entry_time": 1.5,
+      "animal_direction": -1.0,
+      "animal_speed": 2.0,
+      "animal_length": 1.2,
+      "animal_width": 0.7
+    }
+  },
+  "validation": {
+    "label": "SYNTHETIC_INDIAN_ROAD_SIMULATION",
+    "evaluation_type": "aggregate_matched_policy_evaluation",
+    "threshold_tuning": "none; existing policy thresholds were used unchanged",
+    "validation_seeds": [
+      1101,
+      1102
+    ],
+    "final_test_seeds": [
+      1101,
+      1102
+    ],
+    "episode_count": 18,
+    "scenario_configurations": {
+      "pedestrian_crossing": {
+        "ego_speed": 10.0,
+        "ped_speed": 1.2,
+        "ped_start_distance": 25.0,
+        "crossing_time": 1.0,
+        "has_hesitation": false
+      },
+      "autorickshaw_cut_in": {
+        "ego_speed": 10.0,
+        "cut_in_gap": 8.0,
+        "cut_in_speed": 7.8,
+        "lateral_speed": 2.0,
+        "lateral_offset": 2.5,
+        "cut_in_step": 15
+      },
+      "animal_entry": {
+        "ego_speed": 10.0,
+        "animal_start_distance": 25.0,
+        "animal_entry_time": 1.5,
+        "animal_direction": -1.0,
+        "animal_speed": 2.0,
+        "animal_length": 1.2,
+        "animal_width": 0.7
+      }
+    },
+    "aggregate_metrics": {
+      "pedestrian_crossing": {
+        "reactive": {
+          "num_episodes_evaluated": 2,
+          "collision_count": 0,
+          "collision_rate_percent": 0.0,
+          "collisions_per_1000_episodes": 0.0,
+          "near_collision_rate_percent": 0.0,
+          "task_completion_rate_percent": 0.0,
+          "unnecessary_intervention_rate_percent": 100.0,
+          "mean_minimum_separation_meters": 3.04,
+          "std_minimum_separation_meters": 0.106,
+          "mean_emergency_actions_per_ep": 11.5,
+          "mean_elapsed_time_seconds": 6.0
+        },
+        "prediction_aware": {
+          "num_episodes_evaluated": 2,
+          "collision_count": 0,
+          "collision_rate_percent": 0.0,
+          "collisions_per_1000_episodes": 0.0,
+          "near_collision_rate_percent": 0.0,
+          "task_completion_rate_percent": 0.0,
+          "unnecessary_intervention_rate_percent": 50.0,
+          "mean_minimum_separation_meters": 2.006,
+          "std_minimum_separation_meters": 0.036,
+          "mean_emergency_actions_per_ep": 3.5,
+          "mean_elapsed_time_seconds": 6.0
+        },
+        "calibrated_uncertainty": {
+          "num_episodes_evaluated": 2,
+          "collision_count": 0,
+          "collision_rate_percent": 0.0,
+          "collisions_per_1000_episodes": 0.0,
+          "near_collision_rate_percent": 0.0,
+          "task_completion_rate_percent": 0.0,
+          "unnecessary_intervention_rate_percent": 0.0,
+          "mean_minimum_separation_meters": 3.38,
+          "std_minimum_separation_meters": 0.046,
+          "mean_emergency_actions_per_ep": 0.0,
+          "mean_elapsed_time_seconds": 6.0
+        }
+      },
+      "autorickshaw_cut_in": {
+        "reactive": {
+          "num_episodes_evaluated": 2,
+          "collision_count": 0,
+          "collision_rate_percent": 0.0,
+          "collisions_per_1000_episodes": 0.0,
+          "near_collision_rate_percent": 0.0,
+          "task_completion_rate_percent": 100.0,
+          "unnecessary_intervention_rate_percent": 0.0,
+          "mean_minimum_separation_meters": 3.352,
+          "std_minimum_separation_meters": 0.0,
+          "mean_emergency_actions_per_ep": 0.0,
+          "mean_elapsed_time_seconds": 5.9
+        },
+        "prediction_aware": {
+          "num_episodes_evaluated": 2,
+          "collision_count": 0,
+          "collision_rate_percent": 0.0,
+          "collisions_per_1000_episodes": 0.0,
+          "near_collision_rate_percent": 0.0,
+          "task_completion_rate_percent": 100.0,
+          "unnecessary_intervention_rate_percent": 0.0,
+          "mean_minimum_separation_meters": 3.337,
+          "std_minimum_separation_meters": 0.0,
+          "mean_emergency_actions_per_ep": 0.0,
+          "mean_elapsed_time_seconds": 5.8
+        },
+        "calibrated_uncertainty": {
+          "num_episodes_evaluated": 2,
+          "collision_count": 0,
+          "collision_rate_percent": 0.0,
+          "collisions_per_1000_episodes": 0.0,
+          "near_collision_rate_percent": 0.0,
+          "task_completion_rate_percent": 100.0,
+          "unnecessary_intervention_rate_percent": 0.0,
+          "mean_minimum_separation_meters": 2.787,
+          "std_minimum_separation_meters": 0.0,
+          "mean_emergency_actions_per_ep": 0.0,
+          "mean_elapsed_time_seconds": 5.7
+        }
+      },
+      "animal_entry": {
+        "reactive": {
+          "num_episodes_evaluated": 2,
+          "collision_count": 2,
+          "collision_rate_percent": 100.0,
+          "collisions_per_1000_episodes": 1000.0,
+          "near_collision_rate_percent": 100.0,
+          "task_completion_rate_percent": 0.0,
+          "unnecessary_intervention_rate_percent": 0.0,
+          "mean_minimum_separation_meters": 0.0,
+          "std_minimum_separation_meters": 0.0,
+          "mean_emergency_actions_per_ep": 9.0,
+          "mean_elapsed_time_seconds": 3.0
+        },
+        "prediction_aware": {
+          "num_episodes_evaluated": 2,
+          "collision_count": 0,
+          "collision_rate_percent": 0.0,
+          "collisions_per_1000_episodes": 0.0,
+          "near_collision_rate_percent": 0.0,
+          "task_completion_rate_percent": 0.0,
+          "unnecessary_intervention_rate_percent": 100.0,
+          "mean_minimum_separation_meters": 1.609,
+          "std_minimum_separation_meters": 0.056,
+          "mean_emergency_actions_per_ep": 6.5,
+          "mean_elapsed_time_seconds": 6.0
+        },
+        "calibrated_uncertainty": {
+          "num_episodes_evaluated": 2,
+          "collision_count": 0,
+          "collision_rate_percent": 0.0,
+          "collisions_per_1000_episodes": 0.0,
+          "near_collision_rate_percent": 0.0,
+          "task_completion_rate_percent": 0.0,
+          "unnecessary_intervention_rate_percent": 0.0,
+          "mean_minimum_separation_meters": 3.707,
+          "std_minimum_separation_meters": 0.004,
+          "mean_emergency_actions_per_ep": 0.0,
+          "mean_elapsed_time_seconds": 6.0
+        }
+      }
+    },
+    "failure_cases": [
+      {
+        "scenario": "pedestrian_crossing",
+        "seed": 1101,
+        "type": "prediction_worse_or_more_braking",
+        "reactive": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 2.934,
+          "emergency_braking_count": 11,
+          "task_completed": false,
+          "unnecessary_intervention": true,
+          "elapsed_time": 6.0
+        },
+        "prediction_aware": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 1.969,
+          "emergency_braking_count": 3,
+          "task_completed": false,
+          "unnecessary_intervention": true,
+          "elapsed_time": 6.0
+        }
+      },
+      {
+        "scenario": "pedestrian_crossing",
+        "seed": 1101,
+        "type": "prediction_unnecessary_intervention",
+        "metrics": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 1.969,
+          "emergency_braking_count": 3,
+          "task_completed": false,
+          "unnecessary_intervention": true,
+          "elapsed_time": 6.0
+        }
+      },
+      {
+        "scenario": "pedestrian_crossing",
+        "seed": 1102,
+        "type": "prediction_worse_or_more_braking",
+        "reactive": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 3.147,
+          "emergency_braking_count": 12,
+          "task_completed": false,
+          "unnecessary_intervention": true,
+          "elapsed_time": 6.0
+        },
+        "prediction_aware": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 2.042,
+          "emergency_braking_count": 4,
+          "task_completed": false,
+          "unnecessary_intervention": false,
+          "elapsed_time": 6.0
+        }
+      },
+      {
+        "scenario": "autorickshaw_cut_in",
+        "seed": 1101,
+        "type": "prediction_worse_or_more_braking",
+        "reactive": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 3.352,
+          "emergency_braking_count": 0,
+          "task_completed": true,
+          "unnecessary_intervention": false,
+          "elapsed_time": 5.9
+        },
+        "prediction_aware": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 3.337,
+          "emergency_braking_count": 0,
+          "task_completed": true,
+          "unnecessary_intervention": false,
+          "elapsed_time": 5.8
+        }
+      },
+      {
+        "scenario": "autorickshaw_cut_in",
+        "seed": 1101,
+        "type": "uncertainty_worse_or_more_braking",
+        "reactive": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 3.352,
+          "emergency_braking_count": 0,
+          "task_completed": true,
+          "unnecessary_intervention": false,
+          "elapsed_time": 5.9
+        },
+        "calibrated_uncertainty": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 2.787,
+          "emergency_braking_count": 0,
+          "task_completed": true,
+          "unnecessary_intervention": false,
+          "elapsed_time": 5.7
+        }
+      },
+      {
+        "scenario": "autorickshaw_cut_in",
+        "seed": 1102,
+        "type": "prediction_worse_or_more_braking",
+        "reactive": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 3.352,
+          "emergency_braking_count": 0,
+          "task_completed": true,
+          "unnecessary_intervention": false,
+          "elapsed_time": 5.9
+        },
+        "prediction_aware": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 3.337,
+          "emergency_braking_count": 0,
+          "task_completed": true,
+          "unnecessary_intervention": false,
+          "elapsed_time": 5.8
+        }
+      },
+      {
+        "scenario": "autorickshaw_cut_in",
+        "seed": 1102,
+        "type": "uncertainty_worse_or_more_braking",
+        "reactive": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 3.352,
+          "emergency_braking_count": 0,
+          "task_completed": true,
+          "unnecessary_intervention": false,
+          "elapsed_time": 5.9
+        },
+        "calibrated_uncertainty": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 2.787,
+          "emergency_braking_count": 0,
+          "task_completed": true,
+          "unnecessary_intervention": false,
+          "elapsed_time": 5.7
+        }
+      },
+      {
+        "scenario": "animal_entry",
+        "seed": 1101,
+        "type": "prediction_unnecessary_intervention",
+        "metrics": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 1.553,
+          "emergency_braking_count": 6,
+          "task_completed": false,
+          "unnecessary_intervention": true,
+          "elapsed_time": 6.0
+        }
+      },
+      {
+        "scenario": "animal_entry",
+        "seed": 1102,
+        "type": "prediction_unnecessary_intervention",
+        "metrics": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 1.666,
+          "emergency_braking_count": 7,
+          "task_completed": false,
+          "unnecessary_intervention": true,
+          "elapsed_time": 6.0
+        }
+      }
+    ],
+    "episodes": [
+      {
+        "scenario": "pedestrian_crossing",
+        "seed": 1101,
+        "policy": "reactive",
+        "configuration": {
+          "ego_speed": 10.0,
+          "ped_speed": 1.2,
+          "ped_start_distance": 25.0,
+          "crossing_time": 1.0,
+          "has_hesitation": false
+        },
+        "metrics": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 2.934,
+          "emergency_braking_count": 11,
+          "task_completed": false,
+          "unnecessary_intervention": true,
+          "elapsed_time": 6.0
+        }
+      },
+      {
+        "scenario": "pedestrian_crossing",
+        "seed": 1102,
+        "policy": "reactive",
+        "configuration": {
+          "ego_speed": 10.0,
+          "ped_speed": 1.2,
+          "ped_start_distance": 25.0,
+          "crossing_time": 1.0,
+          "has_hesitation": false
+        },
+        "metrics": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 3.147,
+          "emergency_braking_count": 12,
+          "task_completed": false,
+          "unnecessary_intervention": true,
+          "elapsed_time": 6.0
+        }
+      },
+      {
+        "scenario": "pedestrian_crossing",
+        "seed": 1101,
+        "policy": "prediction_aware",
+        "configuration": {
+          "ego_speed": 10.0,
+          "ped_speed": 1.2,
+          "ped_start_distance": 25.0,
+          "crossing_time": 1.0,
+          "has_hesitation": false
+        },
+        "metrics": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 1.969,
+          "emergency_braking_count": 3,
+          "task_completed": false,
+          "unnecessary_intervention": true,
+          "elapsed_time": 6.0
+        }
+      },
+      {
+        "scenario": "pedestrian_crossing",
+        "seed": 1102,
+        "policy": "prediction_aware",
+        "configuration": {
+          "ego_speed": 10.0,
+          "ped_speed": 1.2,
+          "ped_start_distance": 25.0,
+          "crossing_time": 1.0,
+          "has_hesitation": false
+        },
+        "metrics": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 2.042,
+          "emergency_braking_count": 4,
+          "task_completed": false,
+          "unnecessary_intervention": false,
+          "elapsed_time": 6.0
+        }
+      },
+      {
+        "scenario": "pedestrian_crossing",
+        "seed": 1101,
+        "policy": "calibrated_uncertainty",
+        "configuration": {
+          "ego_speed": 10.0,
+          "ped_speed": 1.2,
+          "ped_start_distance": 25.0,
+          "crossing_time": 1.0,
+          "has_hesitation": false
+        },
+        "metrics": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 3.426,
+          "emergency_braking_count": 0,
+          "task_completed": false,
+          "unnecessary_intervention": false,
+          "elapsed_time": 6.0
+        }
+      },
+      {
+        "scenario": "pedestrian_crossing",
+        "seed": 1102,
+        "policy": "calibrated_uncertainty",
+        "configuration": {
+          "ego_speed": 10.0,
+          "ped_speed": 1.2,
+          "ped_start_distance": 25.0,
+          "crossing_time": 1.0,
+          "has_hesitation": false
+        },
+        "metrics": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 3.334,
+          "emergency_braking_count": 0,
+          "task_completed": false,
+          "unnecessary_intervention": false,
+          "elapsed_time": 6.0
+        }
+      },
+      {
+        "scenario": "autorickshaw_cut_in",
+        "seed": 1101,
+        "policy": "reactive",
+        "configuration": {
+          "ego_speed": 10.0,
+          "cut_in_gap": 8.0,
+          "cut_in_speed": 7.8,
+          "lateral_speed": 2.0,
+          "lateral_offset": 2.5,
+          "cut_in_step": 15
+        },
+        "metrics": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 3.352,
+          "emergency_braking_count": 0,
+          "task_completed": true,
+          "unnecessary_intervention": false,
+          "elapsed_time": 5.9
+        }
+      },
+      {
+        "scenario": "autorickshaw_cut_in",
+        "seed": 1102,
+        "policy": "reactive",
+        "configuration": {
+          "ego_speed": 10.0,
+          "cut_in_gap": 8.0,
+          "cut_in_speed": 7.8,
+          "lateral_speed": 2.0,
+          "lateral_offset": 2.5,
+          "cut_in_step": 15
+        },
+        "metrics": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 3.352,
+          "emergency_braking_count": 0,
+          "task_completed": true,
+          "unnecessary_intervention": false,
+          "elapsed_time": 5.9
+        }
+      },
+      {
+        "scenario": "autorickshaw_cut_in",
+        "seed": 1101,
+        "policy": "prediction_aware",
+        "configuration": {
+          "ego_speed": 10.0,
+          "cut_in_gap": 8.0,
+          "cut_in_speed": 7.8,
+          "lateral_speed": 2.0,
+          "lateral_offset": 2.5,
+          "cut_in_step": 15
+        },
+        "metrics": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 3.337,
+          "emergency_braking_count": 0,
+          "task_completed": true,
+          "unnecessary_intervention": false,
+          "elapsed_time": 5.8
+        }
+      },
+      {
+        "scenario": "autorickshaw_cut_in",
+        "seed": 1102,
+        "policy": "prediction_aware",
+        "configuration": {
+          "ego_speed": 10.0,
+          "cut_in_gap": 8.0,
+          "cut_in_speed": 7.8,
+          "lateral_speed": 2.0,
+          "lateral_offset": 2.5,
+          "cut_in_step": 15
+        },
+        "metrics": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 3.337,
+          "emergency_braking_count": 0,
+          "task_completed": true,
+          "unnecessary_intervention": false,
+          "elapsed_time": 5.8
+        }
+      },
+      {
+        "scenario": "autorickshaw_cut_in",
+        "seed": 1101,
+        "policy": "calibrated_uncertainty",
+        "configuration": {
+          "ego_speed": 10.0,
+          "cut_in_gap": 8.0,
+          "cut_in_speed": 7.8,
+          "lateral_speed": 2.0,
+          "lateral_offset": 2.5,
+          "cut_in_step": 15
+        },
+        "metrics": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 2.787,
+          "emergency_braking_count": 0,
+          "task_completed": true,
+          "unnecessary_intervention": false,
+          "elapsed_time": 5.7
+        }
+      },
+      {
+        "scenario": "autorickshaw_cut_in",
+        "seed": 1102,
+        "policy": "calibrated_uncertainty",
+        "configuration": {
+          "ego_speed": 10.0,
+          "cut_in_gap": 8.0,
+          "cut_in_speed": 7.8,
+          "lateral_speed": 2.0,
+          "lateral_offset": 2.5,
+          "cut_in_step": 15
+        },
+        "metrics": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 2.787,
+          "emergency_braking_count": 0,
+          "task_completed": true,
+          "unnecessary_intervention": false,
+          "elapsed_time": 5.7
+        }
+      },
+      {
+        "scenario": "animal_entry",
+        "seed": 1101,
+        "policy": "reactive",
+        "configuration": {
+          "ego_speed": 10.0,
+          "animal_start_distance": 25.0,
+          "animal_entry_time": 1.5,
+          "animal_direction": -1.0,
+          "animal_speed": 2.0,
+          "animal_length": 1.2,
+          "animal_width": 0.7
+        },
+        "metrics": {
+          "collision": true,
+          "near_collision": true,
+          "min_separation": 0.0,
+          "emergency_braking_count": 9,
+          "task_completed": false,
+          "unnecessary_intervention": false,
+          "elapsed_time": 3.0
+        }
+      },
+      {
+        "scenario": "animal_entry",
+        "seed": 1102,
+        "policy": "reactive",
+        "configuration": {
+          "ego_speed": 10.0,
+          "animal_start_distance": 25.0,
+          "animal_entry_time": 1.5,
+          "animal_direction": -1.0,
+          "animal_speed": 2.0,
+          "animal_length": 1.2,
+          "animal_width": 0.7
+        },
+        "metrics": {
+          "collision": true,
+          "near_collision": true,
+          "min_separation": 0.0,
+          "emergency_braking_count": 9,
+          "task_completed": false,
+          "unnecessary_intervention": false,
+          "elapsed_time": 3.0
+        }
+      },
+      {
+        "scenario": "animal_entry",
+        "seed": 1101,
+        "policy": "prediction_aware",
+        "configuration": {
+          "ego_speed": 10.0,
+          "animal_start_distance": 25.0,
+          "animal_entry_time": 1.5,
+          "animal_direction": -1.0,
+          "animal_speed": 2.0,
+          "animal_length": 1.2,
+          "animal_width": 0.7
+        },
+        "metrics": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 1.553,
+          "emergency_braking_count": 6,
+          "task_completed": false,
+          "unnecessary_intervention": true,
+          "elapsed_time": 6.0
+        }
+      },
+      {
+        "scenario": "animal_entry",
+        "seed": 1102,
+        "policy": "prediction_aware",
+        "configuration": {
+          "ego_speed": 10.0,
+          "animal_start_distance": 25.0,
+          "animal_entry_time": 1.5,
+          "animal_direction": -1.0,
+          "animal_speed": 2.0,
+          "animal_length": 1.2,
+          "animal_width": 0.7
+        },
+        "metrics": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 1.666,
+          "emergency_braking_count": 7,
+          "task_completed": false,
+          "unnecessary_intervention": true,
+          "elapsed_time": 6.0
+        }
+      },
+      {
+        "scenario": "animal_entry",
+        "seed": 1101,
+        "policy": "calibrated_uncertainty",
+        "configuration": {
+          "ego_speed": 10.0,
+          "animal_start_distance": 25.0,
+          "animal_entry_time": 1.5,
+          "animal_direction": -1.0,
+          "animal_speed": 2.0,
+          "animal_length": 1.2,
+          "animal_width": 0.7
+        },
+        "metrics": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 3.71,
+          "emergency_braking_count": 0,
+          "task_completed": false,
+          "unnecessary_intervention": false,
+          "elapsed_time": 6.0
+        }
+      },
+      {
+        "scenario": "animal_entry",
+        "seed": 1102,
+        "policy": "calibrated_uncertainty",
+        "configuration": {
+          "ego_speed": 10.0,
+          "animal_start_distance": 25.0,
+          "animal_entry_time": 1.5,
+          "animal_direction": -1.0,
+          "animal_speed": 2.0,
+          "animal_length": 1.2,
+          "animal_width": 0.7
+        },
+        "metrics": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 3.703,
+          "emergency_braking_count": 0,
+          "task_completed": false,
+          "unnecessary_intervention": false,
+          "elapsed_time": 6.0
+        }
+      }
+    ]
+  },
+  "final_test": {
+    "label": "SYNTHETIC_INDIAN_ROAD_SIMULATION",
+    "evaluation_type": "aggregate_matched_policy_evaluation",
+    "threshold_tuning": "none; existing policy thresholds were used unchanged",
+    "validation_seeds": [
+      1201,
+      1202,
+      1203
+    ],
+    "final_test_seeds": [
+      1201,
+      1202,
+      1203
+    ],
+    "episode_count": 27,
+    "scenario_configurations": {
+      "pedestrian_crossing": {
+        "ego_speed": 10.0,
+        "ped_speed": 1.2,
+        "ped_start_distance": 25.0,
+        "crossing_time": 1.0,
+        "has_hesitation": false
+      },
+      "autorickshaw_cut_in": {
+        "ego_speed": 10.0,
+        "cut_in_gap": 8.0,
+        "cut_in_speed": 7.8,
+        "lateral_speed": 2.0,
+        "lateral_offset": 2.5,
+        "cut_in_step": 15
+      },
+      "animal_entry": {
+        "ego_speed": 10.0,
+        "animal_start_distance": 25.0,
+        "animal_entry_time": 1.5,
+        "animal_direction": -1.0,
+        "animal_speed": 2.0,
+        "animal_length": 1.2,
+        "animal_width": 0.7
+      }
+    },
+    "aggregate_metrics": {
+      "pedestrian_crossing": {
+        "reactive": {
+          "num_episodes_evaluated": 3,
+          "collision_count": 0,
+          "collision_rate_percent": 0.0,
+          "collisions_per_1000_episodes": 0.0,
+          "near_collision_rate_percent": 0.0,
+          "task_completion_rate_percent": 0.0,
+          "unnecessary_intervention_rate_percent": 100.0,
+          "mean_minimum_separation_meters": 2.971,
+          "std_minimum_separation_meters": 0.088,
+          "mean_emergency_actions_per_ep": 11.33,
+          "mean_elapsed_time_seconds": 6.0
+        },
+        "prediction_aware": {
+          "num_episodes_evaluated": 3,
+          "collision_count": 0,
+          "collision_rate_percent": 0.0,
+          "collisions_per_1000_episodes": 0.0,
+          "near_collision_rate_percent": 0.0,
+          "task_completion_rate_percent": 0.0,
+          "unnecessary_intervention_rate_percent": 33.33,
+          "mean_minimum_separation_meters": 1.955,
+          "std_minimum_separation_meters": 0.02,
+          "mean_emergency_actions_per_ep": 3.33,
+          "mean_elapsed_time_seconds": 6.0
+        },
+        "calibrated_uncertainty": {
+          "num_episodes_evaluated": 3,
+          "collision_count": 0,
+          "collision_rate_percent": 0.0,
+          "collisions_per_1000_episodes": 0.0,
+          "near_collision_rate_percent": 0.0,
+          "task_completion_rate_percent": 0.0,
+          "unnecessary_intervention_rate_percent": 0.0,
+          "mean_minimum_separation_meters": 3.358,
+          "std_minimum_separation_meters": 0.088,
+          "mean_emergency_actions_per_ep": 0.0,
+          "mean_elapsed_time_seconds": 6.0
+        }
+      },
+      "autorickshaw_cut_in": {
+        "reactive": {
+          "num_episodes_evaluated": 3,
+          "collision_count": 0,
+          "collision_rate_percent": 0.0,
+          "collisions_per_1000_episodes": 0.0,
+          "near_collision_rate_percent": 0.0,
+          "task_completion_rate_percent": 100.0,
+          "unnecessary_intervention_rate_percent": 0.0,
+          "mean_minimum_separation_meters": 3.352,
+          "std_minimum_separation_meters": 0.0,
+          "mean_emergency_actions_per_ep": 0.0,
+          "mean_elapsed_time_seconds": 5.9
+        },
+        "prediction_aware": {
+          "num_episodes_evaluated": 3,
+          "collision_count": 0,
+          "collision_rate_percent": 0.0,
+          "collisions_per_1000_episodes": 0.0,
+          "near_collision_rate_percent": 0.0,
+          "task_completion_rate_percent": 100.0,
+          "unnecessary_intervention_rate_percent": 0.0,
+          "mean_minimum_separation_meters": 3.337,
+          "std_minimum_separation_meters": 0.0,
+          "mean_emergency_actions_per_ep": 0.0,
+          "mean_elapsed_time_seconds": 5.8
+        },
+        "calibrated_uncertainty": {
+          "num_episodes_evaluated": 3,
+          "collision_count": 0,
+          "collision_rate_percent": 0.0,
+          "collisions_per_1000_episodes": 0.0,
+          "near_collision_rate_percent": 0.0,
+          "task_completion_rate_percent": 100.0,
+          "unnecessary_intervention_rate_percent": 0.0,
+          "mean_minimum_separation_meters": 2.787,
+          "std_minimum_separation_meters": 0.0,
+          "mean_emergency_actions_per_ep": 0.0,
+          "mean_elapsed_time_seconds": 5.7
+        }
+      },
+      "animal_entry": {
+        "reactive": {
+          "num_episodes_evaluated": 3,
+          "collision_count": 3,
+          "collision_rate_percent": 100.0,
+          "collisions_per_1000_episodes": 1000.0,
+          "near_collision_rate_percent": 100.0,
+          "task_completion_rate_percent": 0.0,
+          "unnecessary_intervention_rate_percent": 0.0,
+          "mean_minimum_separation_meters": 0.0,
+          "std_minimum_separation_meters": 0.0,
+          "mean_emergency_actions_per_ep": 9.0,
+          "mean_elapsed_time_seconds": 3.0
+        },
+        "prediction_aware": {
+          "num_episodes_evaluated": 3,
+          "collision_count": 0,
+          "collision_rate_percent": 0.0,
+          "collisions_per_1000_episodes": 0.0,
+          "near_collision_rate_percent": 0.0,
+          "task_completion_rate_percent": 0.0,
+          "unnecessary_intervention_rate_percent": 100.0,
+          "mean_minimum_separation_meters": 1.627,
+          "std_minimum_separation_meters": 0.078,
+          "mean_emergency_actions_per_ep": 6.0,
+          "mean_elapsed_time_seconds": 6.0
+        },
+        "calibrated_uncertainty": {
+          "num_episodes_evaluated": 3,
+          "collision_count": 0,
+          "collision_rate_percent": 0.0,
+          "collisions_per_1000_episodes": 0.0,
+          "near_collision_rate_percent": 0.0,
+          "task_completion_rate_percent": 0.0,
+          "unnecessary_intervention_rate_percent": 0.0,
+          "mean_minimum_separation_meters": 3.713,
+          "std_minimum_separation_meters": 0.02,
+          "mean_emergency_actions_per_ep": 0.0,
+          "mean_elapsed_time_seconds": 6.0
+        }
+      }
+    },
+    "failure_cases": [
+      {
+        "scenario": "pedestrian_crossing",
+        "seed": 1201,
+        "type": "prediction_worse_or_more_braking",
+        "reactive": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 2.883,
+          "emergency_braking_count": 11,
+          "task_completed": false,
+          "unnecessary_intervention": true,
+          "elapsed_time": 6.0
+        },
+        "prediction_aware": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 1.943,
+          "emergency_braking_count": 3,
+          "task_completed": false,
+          "unnecessary_intervention": false,
+          "elapsed_time": 6.0
+        }
+      },
+      {
+        "scenario": "pedestrian_crossing",
+        "seed": 1202,
+        "type": "prediction_worse_or_more_braking",
+        "reactive": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 2.938,
+          "emergency_braking_count": 11,
+          "task_completed": false,
+          "unnecessary_intervention": true,
+          "elapsed_time": 6.0
+        },
+        "prediction_aware": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 1.983,
+          "emergency_braking_count": 3,
+          "task_completed": false,
+          "unnecessary_intervention": true,
+          "elapsed_time": 6.0
+        }
+      },
+      {
+        "scenario": "pedestrian_crossing",
+        "seed": 1202,
+        "type": "prediction_unnecessary_intervention",
+        "metrics": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 1.983,
+          "emergency_braking_count": 3,
+          "task_completed": false,
+          "unnecessary_intervention": true,
+          "elapsed_time": 6.0
+        }
+      },
+      {
+        "scenario": "pedestrian_crossing",
+        "seed": 1203,
+        "type": "prediction_worse_or_more_braking",
+        "reactive": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 3.091,
+          "emergency_braking_count": 12,
+          "task_completed": false,
+          "unnecessary_intervention": true,
+          "elapsed_time": 6.0
+        },
+        "prediction_aware": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 1.939,
+          "emergency_braking_count": 4,
+          "task_completed": false,
+          "unnecessary_intervention": false,
+          "elapsed_time": 6.0
+        }
+      },
+      {
+        "scenario": "autorickshaw_cut_in",
+        "seed": 1201,
+        "type": "prediction_worse_or_more_braking",
+        "reactive": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 3.352,
+          "emergency_braking_count": 0,
+          "task_completed": true,
+          "unnecessary_intervention": false,
+          "elapsed_time": 5.9
+        },
+        "prediction_aware": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 3.337,
+          "emergency_braking_count": 0,
+          "task_completed": true,
+          "unnecessary_intervention": false,
+          "elapsed_time": 5.8
+        }
+      },
+      {
+        "scenario": "autorickshaw_cut_in",
+        "seed": 1201,
+        "type": "uncertainty_worse_or_more_braking",
+        "reactive": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 3.352,
+          "emergency_braking_count": 0,
+          "task_completed": true,
+          "unnecessary_intervention": false,
+          "elapsed_time": 5.9
+        },
+        "calibrated_uncertainty": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 2.787,
+          "emergency_braking_count": 0,
+          "task_completed": true,
+          "unnecessary_intervention": false,
+          "elapsed_time": 5.7
+        }
+      },
+      {
+        "scenario": "autorickshaw_cut_in",
+        "seed": 1202,
+        "type": "prediction_worse_or_more_braking",
+        "reactive": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 3.352,
+          "emergency_braking_count": 0,
+          "task_completed": true,
+          "unnecessary_intervention": false,
+          "elapsed_time": 5.9
+        },
+        "prediction_aware": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 3.337,
+          "emergency_braking_count": 0,
+          "task_completed": true,
+          "unnecessary_intervention": false,
+          "elapsed_time": 5.8
+        }
+      },
+      {
+        "scenario": "autorickshaw_cut_in",
+        "seed": 1202,
+        "type": "uncertainty_worse_or_more_braking",
+        "reactive": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 3.352,
+          "emergency_braking_count": 0,
+          "task_completed": true,
+          "unnecessary_intervention": false,
+          "elapsed_time": 5.9
+        },
+        "calibrated_uncertainty": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 2.787,
+          "emergency_braking_count": 0,
+          "task_completed": true,
+          "unnecessary_intervention": false,
+          "elapsed_time": 5.7
+        }
+      },
+      {
+        "scenario": "autorickshaw_cut_in",
+        "seed": 1203,
+        "type": "prediction_worse_or_more_braking",
+        "reactive": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 3.352,
+          "emergency_braking_count": 0,
+          "task_completed": true,
+          "unnecessary_intervention": false,
+          "elapsed_time": 5.9
+        },
+        "prediction_aware": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 3.337,
+          "emergency_braking_count": 0,
+          "task_completed": true,
+          "unnecessary_intervention": false,
+          "elapsed_time": 5.8
+        }
+      },
+      {
+        "scenario": "autorickshaw_cut_in",
+        "seed": 1203,
+        "type": "uncertainty_worse_or_more_braking",
+        "reactive": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 3.352,
+          "emergency_braking_count": 0,
+          "task_completed": true,
+          "unnecessary_intervention": false,
+          "elapsed_time": 5.9
+        },
+        "calibrated_uncertainty": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 2.787,
+          "emergency_braking_count": 0,
+          "task_completed": true,
+          "unnecessary_intervention": false,
+          "elapsed_time": 5.7
+        }
+      },
+      {
+        "scenario": "animal_entry",
+        "seed": 1201,
+        "type": "prediction_unnecessary_intervention",
+        "metrics": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 1.643,
+          "emergency_braking_count": 6,
+          "task_completed": false,
+          "unnecessary_intervention": true,
+          "elapsed_time": 6.0
+        }
+      },
+      {
+        "scenario": "animal_entry",
+        "seed": 1202,
+        "type": "prediction_unnecessary_intervention",
+        "metrics": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 1.524,
+          "emergency_braking_count": 6,
+          "task_completed": false,
+          "unnecessary_intervention": true,
+          "elapsed_time": 6.0
+        }
+      },
+      {
+        "scenario": "animal_entry",
+        "seed": 1203,
+        "type": "prediction_unnecessary_intervention",
+        "metrics": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 1.714,
+          "emergency_braking_count": 6,
+          "task_completed": false,
+          "unnecessary_intervention": true,
+          "elapsed_time": 6.0
+        }
+      }
+    ],
+    "episodes": [
+      {
+        "scenario": "pedestrian_crossing",
+        "seed": 1201,
+        "policy": "reactive",
+        "configuration": {
+          "ego_speed": 10.0,
+          "ped_speed": 1.2,
+          "ped_start_distance": 25.0,
+          "crossing_time": 1.0,
+          "has_hesitation": false
+        },
+        "metrics": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 2.883,
+          "emergency_braking_count": 11,
+          "task_completed": false,
+          "unnecessary_intervention": true,
+          "elapsed_time": 6.0
+        }
+      },
+      {
+        "scenario": "pedestrian_crossing",
+        "seed": 1202,
+        "policy": "reactive",
+        "configuration": {
+          "ego_speed": 10.0,
+          "ped_speed": 1.2,
+          "ped_start_distance": 25.0,
+          "crossing_time": 1.0,
+          "has_hesitation": false
+        },
+        "metrics": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 2.938,
+          "emergency_braking_count": 11,
+          "task_completed": false,
+          "unnecessary_intervention": true,
+          "elapsed_time": 6.0
+        }
+      },
+      {
+        "scenario": "pedestrian_crossing",
+        "seed": 1203,
+        "policy": "reactive",
+        "configuration": {
+          "ego_speed": 10.0,
+          "ped_speed": 1.2,
+          "ped_start_distance": 25.0,
+          "crossing_time": 1.0,
+          "has_hesitation": false
+        },
+        "metrics": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 3.091,
+          "emergency_braking_count": 12,
+          "task_completed": false,
+          "unnecessary_intervention": true,
+          "elapsed_time": 6.0
+        }
+      },
+      {
+        "scenario": "pedestrian_crossing",
+        "seed": 1201,
+        "policy": "prediction_aware",
+        "configuration": {
+          "ego_speed": 10.0,
+          "ped_speed": 1.2,
+          "ped_start_distance": 25.0,
+          "crossing_time": 1.0,
+          "has_hesitation": false
+        },
+        "metrics": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 1.943,
+          "emergency_braking_count": 3,
+          "task_completed": false,
+          "unnecessary_intervention": false,
+          "elapsed_time": 6.0
+        }
+      },
+      {
+        "scenario": "pedestrian_crossing",
+        "seed": 1202,
+        "policy": "prediction_aware",
+        "configuration": {
+          "ego_speed": 10.0,
+          "ped_speed": 1.2,
+          "ped_start_distance": 25.0,
+          "crossing_time": 1.0,
+          "has_hesitation": false
+        },
+        "metrics": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 1.983,
+          "emergency_braking_count": 3,
+          "task_completed": false,
+          "unnecessary_intervention": true,
+          "elapsed_time": 6.0
+        }
+      },
+      {
+        "scenario": "pedestrian_crossing",
+        "seed": 1203,
+        "policy": "prediction_aware",
+        "configuration": {
+          "ego_speed": 10.0,
+          "ped_speed": 1.2,
+          "ped_start_distance": 25.0,
+          "crossing_time": 1.0,
+          "has_hesitation": false
+        },
+        "metrics": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 1.939,
+          "emergency_braking_count": 4,
+          "task_completed": false,
+          "unnecessary_intervention": false,
+          "elapsed_time": 6.0
+        }
+      },
+      {
+        "scenario": "pedestrian_crossing",
+        "seed": 1201,
+        "policy": "calibrated_uncertainty",
+        "configuration": {
+          "ego_speed": 10.0,
+          "ped_speed": 1.2,
+          "ped_start_distance": 25.0,
+          "crossing_time": 1.0,
+          "has_hesitation": false
+        },
+        "metrics": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 3.373,
+          "emergency_braking_count": 0,
+          "task_completed": false,
+          "unnecessary_intervention": false,
+          "elapsed_time": 6.0
+        }
+      },
+      {
+        "scenario": "pedestrian_crossing",
+        "seed": 1202,
+        "policy": "calibrated_uncertainty",
+        "configuration": {
+          "ego_speed": 10.0,
+          "ped_speed": 1.2,
+          "ped_start_distance": 25.0,
+          "crossing_time": 1.0,
+          "has_hesitation": false
+        },
+        "metrics": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 3.458,
+          "emergency_braking_count": 0,
+          "task_completed": false,
+          "unnecessary_intervention": false,
+          "elapsed_time": 6.0
+        }
+      },
+      {
+        "scenario": "pedestrian_crossing",
+        "seed": 1203,
+        "policy": "calibrated_uncertainty",
+        "configuration": {
+          "ego_speed": 10.0,
+          "ped_speed": 1.2,
+          "ped_start_distance": 25.0,
+          "crossing_time": 1.0,
+          "has_hesitation": false
+        },
+        "metrics": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 3.244,
+          "emergency_braking_count": 0,
+          "task_completed": false,
+          "unnecessary_intervention": false,
+          "elapsed_time": 6.0
+        }
+      },
+      {
+        "scenario": "autorickshaw_cut_in",
+        "seed": 1201,
+        "policy": "reactive",
+        "configuration": {
+          "ego_speed": 10.0,
+          "cut_in_gap": 8.0,
+          "cut_in_speed": 7.8,
+          "lateral_speed": 2.0,
+          "lateral_offset": 2.5,
+          "cut_in_step": 15
+        },
+        "metrics": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 3.352,
+          "emergency_braking_count": 0,
+          "task_completed": true,
+          "unnecessary_intervention": false,
+          "elapsed_time": 5.9
+        }
+      },
+      {
+        "scenario": "autorickshaw_cut_in",
+        "seed": 1202,
+        "policy": "reactive",
+        "configuration": {
+          "ego_speed": 10.0,
+          "cut_in_gap": 8.0,
+          "cut_in_speed": 7.8,
+          "lateral_speed": 2.0,
+          "lateral_offset": 2.5,
+          "cut_in_step": 15
+        },
+        "metrics": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 3.352,
+          "emergency_braking_count": 0,
+          "task_completed": true,
+          "unnecessary_intervention": false,
+          "elapsed_time": 5.9
+        }
+      },
+      {
+        "scenario": "autorickshaw_cut_in",
+        "seed": 1203,
+        "policy": "reactive",
+        "configuration": {
+          "ego_speed": 10.0,
+          "cut_in_gap": 8.0,
+          "cut_in_speed": 7.8,
+          "lateral_speed": 2.0,
+          "lateral_offset": 2.5,
+          "cut_in_step": 15
+        },
+        "metrics": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 3.352,
+          "emergency_braking_count": 0,
+          "task_completed": true,
+          "unnecessary_intervention": false,
+          "elapsed_time": 5.9
+        }
+      },
+      {
+        "scenario": "autorickshaw_cut_in",
+        "seed": 1201,
+        "policy": "prediction_aware",
+        "configuration": {
+          "ego_speed": 10.0,
+          "cut_in_gap": 8.0,
+          "cut_in_speed": 7.8,
+          "lateral_speed": 2.0,
+          "lateral_offset": 2.5,
+          "cut_in_step": 15
+        },
+        "metrics": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 3.337,
+          "emergency_braking_count": 0,
+          "task_completed": true,
+          "unnecessary_intervention": false,
+          "elapsed_time": 5.8
+        }
+      },
+      {
+        "scenario": "autorickshaw_cut_in",
+        "seed": 1202,
+        "policy": "prediction_aware",
+        "configuration": {
+          "ego_speed": 10.0,
+          "cut_in_gap": 8.0,
+          "cut_in_speed": 7.8,
+          "lateral_speed": 2.0,
+          "lateral_offset": 2.5,
+          "cut_in_step": 15
+        },
+        "metrics": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 3.337,
+          "emergency_braking_count": 0,
+          "task_completed": true,
+          "unnecessary_intervention": false,
+          "elapsed_time": 5.8
+        }
+      },
+      {
+        "scenario": "autorickshaw_cut_in",
+        "seed": 1203,
+        "policy": "prediction_aware",
+        "configuration": {
+          "ego_speed": 10.0,
+          "cut_in_gap": 8.0,
+          "cut_in_speed": 7.8,
+          "lateral_speed": 2.0,
+          "lateral_offset": 2.5,
+          "cut_in_step": 15
+        },
+        "metrics": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 3.337,
+          "emergency_braking_count": 0,
+          "task_completed": true,
+          "unnecessary_intervention": false,
+          "elapsed_time": 5.8
+        }
+      },
+      {
+        "scenario": "autorickshaw_cut_in",
+        "seed": 1201,
+        "policy": "calibrated_uncertainty",
+        "configuration": {
+          "ego_speed": 10.0,
+          "cut_in_gap": 8.0,
+          "cut_in_speed": 7.8,
+          "lateral_speed": 2.0,
+          "lateral_offset": 2.5,
+          "cut_in_step": 15
+        },
+        "metrics": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 2.787,
+          "emergency_braking_count": 0,
+          "task_completed": true,
+          "unnecessary_intervention": false,
+          "elapsed_time": 5.7
+        }
+      },
+      {
+        "scenario": "autorickshaw_cut_in",
+        "seed": 1202,
+        "policy": "calibrated_uncertainty",
+        "configuration": {
+          "ego_speed": 10.0,
+          "cut_in_gap": 8.0,
+          "cut_in_speed": 7.8,
+          "lateral_speed": 2.0,
+          "lateral_offset": 2.5,
+          "cut_in_step": 15
+        },
+        "metrics": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 2.787,
+          "emergency_braking_count": 0,
+          "task_completed": true,
+          "unnecessary_intervention": false,
+          "elapsed_time": 5.7
+        }
+      },
+      {
+        "scenario": "autorickshaw_cut_in",
+        "seed": 1203,
+        "policy": "calibrated_uncertainty",
+        "configuration": {
+          "ego_speed": 10.0,
+          "cut_in_gap": 8.0,
+          "cut_in_speed": 7.8,
+          "lateral_speed": 2.0,
+          "lateral_offset": 2.5,
+          "cut_in_step": 15
+        },
+        "metrics": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 2.787,
+          "emergency_braking_count": 0,
+          "task_completed": true,
+          "unnecessary_intervention": false,
+          "elapsed_time": 5.7
+        }
+      },
+      {
+        "scenario": "animal_entry",
+        "seed": 1201,
+        "policy": "reactive",
+        "configuration": {
+          "ego_speed": 10.0,
+          "animal_start_distance": 25.0,
+          "animal_entry_time": 1.5,
+          "animal_direction": -1.0,
+          "animal_speed": 2.0,
+          "animal_length": 1.2,
+          "animal_width": 0.7
+        },
+        "metrics": {
+          "collision": true,
+          "near_collision": true,
+          "min_separation": 0.0,
+          "emergency_braking_count": 9,
+          "task_completed": false,
+          "unnecessary_intervention": false,
+          "elapsed_time": 3.0
+        }
+      },
+      {
+        "scenario": "animal_entry",
+        "seed": 1202,
+        "policy": "reactive",
+        "configuration": {
+          "ego_speed": 10.0,
+          "animal_start_distance": 25.0,
+          "animal_entry_time": 1.5,
+          "animal_direction": -1.0,
+          "animal_speed": 2.0,
+          "animal_length": 1.2,
+          "animal_width": 0.7
+        },
+        "metrics": {
+          "collision": true,
+          "near_collision": true,
+          "min_separation": 0.0,
+          "emergency_braking_count": 9,
+          "task_completed": false,
+          "unnecessary_intervention": false,
+          "elapsed_time": 3.0
+        }
+      },
+      {
+        "scenario": "animal_entry",
+        "seed": 1203,
+        "policy": "reactive",
+        "configuration": {
+          "ego_speed": 10.0,
+          "animal_start_distance": 25.0,
+          "animal_entry_time": 1.5,
+          "animal_direction": -1.0,
+          "animal_speed": 2.0,
+          "animal_length": 1.2,
+          "animal_width": 0.7
+        },
+        "metrics": {
+          "collision": true,
+          "near_collision": true,
+          "min_separation": 0.0,
+          "emergency_braking_count": 9,
+          "task_completed": false,
+          "unnecessary_intervention": false,
+          "elapsed_time": 3.0
+        }
+      },
+      {
+        "scenario": "animal_entry",
+        "seed": 1201,
+        "policy": "prediction_aware",
+        "configuration": {
+          "ego_speed": 10.0,
+          "animal_start_distance": 25.0,
+          "animal_entry_time": 1.5,
+          "animal_direction": -1.0,
+          "animal_speed": 2.0,
+          "animal_length": 1.2,
+          "animal_width": 0.7
+        },
+        "metrics": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 1.643,
+          "emergency_braking_count": 6,
+          "task_completed": false,
+          "unnecessary_intervention": true,
+          "elapsed_time": 6.0
+        }
+      },
+      {
+        "scenario": "animal_entry",
+        "seed": 1202,
+        "policy": "prediction_aware",
+        "configuration": {
+          "ego_speed": 10.0,
+          "animal_start_distance": 25.0,
+          "animal_entry_time": 1.5,
+          "animal_direction": -1.0,
+          "animal_speed": 2.0,
+          "animal_length": 1.2,
+          "animal_width": 0.7
+        },
+        "metrics": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 1.524,
+          "emergency_braking_count": 6,
+          "task_completed": false,
+          "unnecessary_intervention": true,
+          "elapsed_time": 6.0
+        }
+      },
+      {
+        "scenario": "animal_entry",
+        "seed": 1203,
+        "policy": "prediction_aware",
+        "configuration": {
+          "ego_speed": 10.0,
+          "animal_start_distance": 25.0,
+          "animal_entry_time": 1.5,
+          "animal_direction": -1.0,
+          "animal_speed": 2.0,
+          "animal_length": 1.2,
+          "animal_width": 0.7
+        },
+        "metrics": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 1.714,
+          "emergency_braking_count": 6,
+          "task_completed": false,
+          "unnecessary_intervention": true,
+          "elapsed_time": 6.0
+        }
+      },
+      {
+        "scenario": "animal_entry",
+        "seed": 1201,
+        "policy": "calibrated_uncertainty",
+        "configuration": {
+          "ego_speed": 10.0,
+          "animal_start_distance": 25.0,
+          "animal_entry_time": 1.5,
+          "animal_direction": -1.0,
+          "animal_speed": 2.0,
+          "animal_length": 1.2,
+          "animal_width": 0.7
+        },
+        "metrics": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 3.724,
+          "emergency_braking_count": 0,
+          "task_completed": false,
+          "unnecessary_intervention": false,
+          "elapsed_time": 6.0
+        }
+      },
+      {
+        "scenario": "animal_entry",
+        "seed": 1202,
+        "policy": "calibrated_uncertainty",
+        "configuration": {
+          "ego_speed": 10.0,
+          "animal_start_distance": 25.0,
+          "animal_entry_time": 1.5,
+          "animal_direction": -1.0,
+          "animal_speed": 2.0,
+          "animal_length": 1.2,
+          "animal_width": 0.7
+        },
+        "metrics": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 3.685,
+          "emergency_braking_count": 0,
+          "task_completed": false,
+          "unnecessary_intervention": false,
+          "elapsed_time": 6.0
+        }
+      },
+      {
+        "scenario": "animal_entry",
+        "seed": 1203,
+        "policy": "calibrated_uncertainty",
+        "configuration": {
+          "ego_speed": 10.0,
+          "animal_start_distance": 25.0,
+          "animal_entry_time": 1.5,
+          "animal_direction": -1.0,
+          "animal_speed": 2.0,
+          "animal_length": 1.2,
+          "animal_width": 0.7
+        },
+        "metrics": {
+          "collision": false,
+          "near_collision": false,
+          "min_separation": 3.73,
+          "emergency_braking_count": 0,
+          "task_completed": false,
+          "unnecessary_intervention": false,
+          "elapsed_time": 6.0
+        }
+      }
+    ]
+  },
+  "aggregate_metrics": {
+    "pedestrian_crossing": {
+      "reactive": {
+        "num_episodes_evaluated": 3,
+        "collision_count": 0,
+        "collision_rate_percent": 0.0,
+        "collisions_per_1000_episodes": 0.0,
+        "near_collision_rate_percent": 0.0,
+        "task_completion_rate_percent": 0.0,
+        "unnecessary_intervention_rate_percent": 100.0,
+        "mean_minimum_separation_meters": 2.971,
+        "std_minimum_separation_meters": 0.088,
+        "mean_emergency_actions_per_ep": 11.33,
+        "mean_elapsed_time_seconds": 6.0
+      },
+      "prediction_aware": {
+        "num_episodes_evaluated": 3,
+        "collision_count": 0,
+        "collision_rate_percent": 0.0,
+        "collisions_per_1000_episodes": 0.0,
+        "near_collision_rate_percent": 0.0,
+        "task_completion_rate_percent": 0.0,
+        "unnecessary_intervention_rate_percent": 33.33,
+        "mean_minimum_separation_meters": 1.955,
+        "std_minimum_separation_meters": 0.02,
+        "mean_emergency_actions_per_ep": 3.33,
+        "mean_elapsed_time_seconds": 6.0
+      },
+      "calibrated_uncertainty": {
+        "num_episodes_evaluated": 3,
+        "collision_count": 0,
+        "collision_rate_percent": 0.0,
+        "collisions_per_1000_episodes": 0.0,
+        "near_collision_rate_percent": 0.0,
+        "task_completion_rate_percent": 0.0,
+        "unnecessary_intervention_rate_percent": 0.0,
+        "mean_minimum_separation_meters": 3.358,
+        "std_minimum_separation_meters": 0.088,
+        "mean_emergency_actions_per_ep": 0.0,
+        "mean_elapsed_time_seconds": 6.0
+      }
+    },
+    "autorickshaw_cut_in": {
+      "reactive": {
+        "num_episodes_evaluated": 3,
+        "collision_count": 0,
+        "collision_rate_percent": 0.0,
+        "collisions_per_1000_episodes": 0.0,
+        "near_collision_rate_percent": 0.0,
+        "task_completion_rate_percent": 100.0,
+        "unnecessary_intervention_rate_percent": 0.0,
+        "mean_minimum_separation_meters": 3.352,
+        "std_minimum_separation_meters": 0.0,
+        "mean_emergency_actions_per_ep": 0.0,
+        "mean_elapsed_time_seconds": 5.9
+      },
+      "prediction_aware": {
+        "num_episodes_evaluated": 3,
+        "collision_count": 0,
+        "collision_rate_percent": 0.0,
+        "collisions_per_1000_episodes": 0.0,
+        "near_collision_rate_percent": 0.0,
+        "task_completion_rate_percent": 100.0,
+        "unnecessary_intervention_rate_percent": 0.0,
+        "mean_minimum_separation_meters": 3.337,
+        "std_minimum_separation_meters": 0.0,
+        "mean_emergency_actions_per_ep": 0.0,
+        "mean_elapsed_time_seconds": 5.8
+      },
+      "calibrated_uncertainty": {
+        "num_episodes_evaluated": 3,
+        "collision_count": 0,
+        "collision_rate_percent": 0.0,
+        "collisions_per_1000_episodes": 0.0,
+        "near_collision_rate_percent": 0.0,
+        "task_completion_rate_percent": 100.0,
+        "unnecessary_intervention_rate_percent": 0.0,
+        "mean_minimum_separation_meters": 2.787,
+        "std_minimum_separation_meters": 0.0,
+        "mean_emergency_actions_per_ep": 0.0,
+        "mean_elapsed_time_seconds": 5.7
+      }
+    },
+    "animal_entry": {
+      "reactive": {
+        "num_episodes_evaluated": 3,
+        "collision_count": 3,
+        "collision_rate_percent": 100.0,
+        "collisions_per_1000_episodes": 1000.0,
+        "near_collision_rate_percent": 100.0,
+        "task_completion_rate_percent": 0.0,
+        "unnecessary_intervention_rate_percent": 0.0,
+        "mean_minimum_separation_meters": 0.0,
+        "std_minimum_separation_meters": 0.0,
+        "mean_emergency_actions_per_ep": 9.0,
+        "mean_elapsed_time_seconds": 3.0
+      },
+      "prediction_aware": {
+        "num_episodes_evaluated": 3,
+        "collision_count": 0,
+        "collision_rate_percent": 0.0,
+        "collisions_per_1000_episodes": 0.0,
+        "near_collision_rate_percent": 0.0,
+        "task_completion_rate_percent": 0.0,
+        "unnecessary_intervention_rate_percent": 100.0,
+        "mean_minimum_separation_meters": 1.627,
+        "std_minimum_separation_meters": 0.078,
+        "mean_emergency_actions_per_ep": 6.0,
+        "mean_elapsed_time_seconds": 6.0
+      },
+      "calibrated_uncertainty": {
+        "num_episodes_evaluated": 3,
+        "collision_count": 0,
+        "collision_rate_percent": 0.0,
+        "collisions_per_1000_episodes": 0.0,
+        "near_collision_rate_percent": 0.0,
+        "task_completion_rate_percent": 0.0,
+        "unnecessary_intervention_rate_percent": 0.0,
+        "mean_minimum_separation_meters": 3.713,
+        "std_minimum_separation_meters": 0.02,
+        "mean_emergency_actions_per_ep": 0.0,
+        "mean_elapsed_time_seconds": 6.0
+      }
+    }
+  },
+  "failure_cases": [
+    {
+      "scenario": "pedestrian_crossing",
+      "seed": 1201,
+      "type": "prediction_worse_or_more_braking",
+      "reactive": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 2.883,
+        "emergency_braking_count": 11,
+        "task_completed": false,
+        "unnecessary_intervention": true,
+        "elapsed_time": 6.0
+      },
+      "prediction_aware": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 1.943,
+        "emergency_braking_count": 3,
+        "task_completed": false,
+        "unnecessary_intervention": false,
+        "elapsed_time": 6.0
+      }
+    },
+    {
+      "scenario": "pedestrian_crossing",
+      "seed": 1202,
+      "type": "prediction_worse_or_more_braking",
+      "reactive": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 2.938,
+        "emergency_braking_count": 11,
+        "task_completed": false,
+        "unnecessary_intervention": true,
+        "elapsed_time": 6.0
+      },
+      "prediction_aware": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 1.983,
+        "emergency_braking_count": 3,
+        "task_completed": false,
+        "unnecessary_intervention": true,
+        "elapsed_time": 6.0
+      }
+    },
+    {
+      "scenario": "pedestrian_crossing",
+      "seed": 1202,
+      "type": "prediction_unnecessary_intervention",
+      "metrics": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 1.983,
+        "emergency_braking_count": 3,
+        "task_completed": false,
+        "unnecessary_intervention": true,
+        "elapsed_time": 6.0
+      }
+    },
+    {
+      "scenario": "pedestrian_crossing",
+      "seed": 1203,
+      "type": "prediction_worse_or_more_braking",
+      "reactive": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 3.091,
+        "emergency_braking_count": 12,
+        "task_completed": false,
+        "unnecessary_intervention": true,
+        "elapsed_time": 6.0
+      },
+      "prediction_aware": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 1.939,
+        "emergency_braking_count": 4,
+        "task_completed": false,
+        "unnecessary_intervention": false,
+        "elapsed_time": 6.0
+      }
+    },
+    {
+      "scenario": "autorickshaw_cut_in",
+      "seed": 1201,
+      "type": "prediction_worse_or_more_braking",
+      "reactive": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 3.352,
+        "emergency_braking_count": 0,
+        "task_completed": true,
+        "unnecessary_intervention": false,
+        "elapsed_time": 5.9
+      },
+      "prediction_aware": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 3.337,
+        "emergency_braking_count": 0,
+        "task_completed": true,
+        "unnecessary_intervention": false,
+        "elapsed_time": 5.8
+      }
+    },
+    {
+      "scenario": "autorickshaw_cut_in",
+      "seed": 1201,
+      "type": "uncertainty_worse_or_more_braking",
+      "reactive": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 3.352,
+        "emergency_braking_count": 0,
+        "task_completed": true,
+        "unnecessary_intervention": false,
+        "elapsed_time": 5.9
+      },
+      "calibrated_uncertainty": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 2.787,
+        "emergency_braking_count": 0,
+        "task_completed": true,
+        "unnecessary_intervention": false,
+        "elapsed_time": 5.7
+      }
+    },
+    {
+      "scenario": "autorickshaw_cut_in",
+      "seed": 1202,
+      "type": "prediction_worse_or_more_braking",
+      "reactive": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 3.352,
+        "emergency_braking_count": 0,
+        "task_completed": true,
+        "unnecessary_intervention": false,
+        "elapsed_time": 5.9
+      },
+      "prediction_aware": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 3.337,
+        "emergency_braking_count": 0,
+        "task_completed": true,
+        "unnecessary_intervention": false,
+        "elapsed_time": 5.8
+      }
+    },
+    {
+      "scenario": "autorickshaw_cut_in",
+      "seed": 1202,
+      "type": "uncertainty_worse_or_more_braking",
+      "reactive": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 3.352,
+        "emergency_braking_count": 0,
+        "task_completed": true,
+        "unnecessary_intervention": false,
+        "elapsed_time": 5.9
+      },
+      "calibrated_uncertainty": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 2.787,
+        "emergency_braking_count": 0,
+        "task_completed": true,
+        "unnecessary_intervention": false,
+        "elapsed_time": 5.7
+      }
+    },
+    {
+      "scenario": "autorickshaw_cut_in",
+      "seed": 1203,
+      "type": "prediction_worse_or_more_braking",
+      "reactive": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 3.352,
+        "emergency_braking_count": 0,
+        "task_completed": true,
+        "unnecessary_intervention": false,
+        "elapsed_time": 5.9
+      },
+      "prediction_aware": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 3.337,
+        "emergency_braking_count": 0,
+        "task_completed": true,
+        "unnecessary_intervention": false,
+        "elapsed_time": 5.8
+      }
+    },
+    {
+      "scenario": "autorickshaw_cut_in",
+      "seed": 1203,
+      "type": "uncertainty_worse_or_more_braking",
+      "reactive": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 3.352,
+        "emergency_braking_count": 0,
+        "task_completed": true,
+        "unnecessary_intervention": false,
+        "elapsed_time": 5.9
+      },
+      "calibrated_uncertainty": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 2.787,
+        "emergency_braking_count": 0,
+        "task_completed": true,
+        "unnecessary_intervention": false,
+        "elapsed_time": 5.7
+      }
+    },
+    {
+      "scenario": "animal_entry",
+      "seed": 1201,
+      "type": "prediction_unnecessary_intervention",
+      "metrics": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 1.643,
+        "emergency_braking_count": 6,
+        "task_completed": false,
+        "unnecessary_intervention": true,
+        "elapsed_time": 6.0
+      }
+    },
+    {
+      "scenario": "animal_entry",
+      "seed": 1202,
+      "type": "prediction_unnecessary_intervention",
+      "metrics": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 1.524,
+        "emergency_braking_count": 6,
+        "task_completed": false,
+        "unnecessary_intervention": true,
+        "elapsed_time": 6.0
+      }
+    },
+    {
+      "scenario": "animal_entry",
+      "seed": 1203,
+      "type": "prediction_unnecessary_intervention",
+      "metrics": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 1.714,
+        "emergency_braking_count": 6,
+        "task_completed": false,
+        "unnecessary_intervention": true,
+        "elapsed_time": 6.0
+      }
+    }
+  ],
+  "episodes": [
+    {
+      "scenario": "pedestrian_crossing",
+      "seed": 1101,
+      "policy": "reactive",
+      "configuration": {
+        "ego_speed": 10.0,
+        "ped_speed": 1.2,
+        "ped_start_distance": 25.0,
+        "crossing_time": 1.0,
+        "has_hesitation": false
+      },
+      "metrics": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 2.934,
+        "emergency_braking_count": 11,
+        "task_completed": false,
+        "unnecessary_intervention": true,
+        "elapsed_time": 6.0
+      }
+    },
+    {
+      "scenario": "pedestrian_crossing",
+      "seed": 1102,
+      "policy": "reactive",
+      "configuration": {
+        "ego_speed": 10.0,
+        "ped_speed": 1.2,
+        "ped_start_distance": 25.0,
+        "crossing_time": 1.0,
+        "has_hesitation": false
+      },
+      "metrics": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 3.147,
+        "emergency_braking_count": 12,
+        "task_completed": false,
+        "unnecessary_intervention": true,
+        "elapsed_time": 6.0
+      }
+    },
+    {
+      "scenario": "pedestrian_crossing",
+      "seed": 1101,
+      "policy": "prediction_aware",
+      "configuration": {
+        "ego_speed": 10.0,
+        "ped_speed": 1.2,
+        "ped_start_distance": 25.0,
+        "crossing_time": 1.0,
+        "has_hesitation": false
+      },
+      "metrics": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 1.969,
+        "emergency_braking_count": 3,
+        "task_completed": false,
+        "unnecessary_intervention": true,
+        "elapsed_time": 6.0
+      }
+    },
+    {
+      "scenario": "pedestrian_crossing",
+      "seed": 1102,
+      "policy": "prediction_aware",
+      "configuration": {
+        "ego_speed": 10.0,
+        "ped_speed": 1.2,
+        "ped_start_distance": 25.0,
+        "crossing_time": 1.0,
+        "has_hesitation": false
+      },
+      "metrics": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 2.042,
+        "emergency_braking_count": 4,
+        "task_completed": false,
+        "unnecessary_intervention": false,
+        "elapsed_time": 6.0
+      }
+    },
+    {
+      "scenario": "pedestrian_crossing",
+      "seed": 1101,
+      "policy": "calibrated_uncertainty",
+      "configuration": {
+        "ego_speed": 10.0,
+        "ped_speed": 1.2,
+        "ped_start_distance": 25.0,
+        "crossing_time": 1.0,
+        "has_hesitation": false
+      },
+      "metrics": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 3.426,
+        "emergency_braking_count": 0,
+        "task_completed": false,
+        "unnecessary_intervention": false,
+        "elapsed_time": 6.0
+      }
+    },
+    {
+      "scenario": "pedestrian_crossing",
+      "seed": 1102,
+      "policy": "calibrated_uncertainty",
+      "configuration": {
+        "ego_speed": 10.0,
+        "ped_speed": 1.2,
+        "ped_start_distance": 25.0,
+        "crossing_time": 1.0,
+        "has_hesitation": false
+      },
+      "metrics": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 3.334,
+        "emergency_braking_count": 0,
+        "task_completed": false,
+        "unnecessary_intervention": false,
+        "elapsed_time": 6.0
+      }
+    },
+    {
+      "scenario": "autorickshaw_cut_in",
+      "seed": 1101,
+      "policy": "reactive",
+      "configuration": {
+        "ego_speed": 10.0,
+        "cut_in_gap": 8.0,
+        "cut_in_speed": 7.8,
+        "lateral_speed": 2.0,
+        "lateral_offset": 2.5,
+        "cut_in_step": 15
+      },
+      "metrics": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 3.352,
+        "emergency_braking_count": 0,
+        "task_completed": true,
+        "unnecessary_intervention": false,
+        "elapsed_time": 5.9
+      }
+    },
+    {
+      "scenario": "autorickshaw_cut_in",
+      "seed": 1102,
+      "policy": "reactive",
+      "configuration": {
+        "ego_speed": 10.0,
+        "cut_in_gap": 8.0,
+        "cut_in_speed": 7.8,
+        "lateral_speed": 2.0,
+        "lateral_offset": 2.5,
+        "cut_in_step": 15
+      },
+      "metrics": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 3.352,
+        "emergency_braking_count": 0,
+        "task_completed": true,
+        "unnecessary_intervention": false,
+        "elapsed_time": 5.9
+      }
+    },
+    {
+      "scenario": "autorickshaw_cut_in",
+      "seed": 1101,
+      "policy": "prediction_aware",
+      "configuration": {
+        "ego_speed": 10.0,
+        "cut_in_gap": 8.0,
+        "cut_in_speed": 7.8,
+        "lateral_speed": 2.0,
+        "lateral_offset": 2.5,
+        "cut_in_step": 15
+      },
+      "metrics": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 3.337,
+        "emergency_braking_count": 0,
+        "task_completed": true,
+        "unnecessary_intervention": false,
+        "elapsed_time": 5.8
+      }
+    },
+    {
+      "scenario": "autorickshaw_cut_in",
+      "seed": 1102,
+      "policy": "prediction_aware",
+      "configuration": {
+        "ego_speed": 10.0,
+        "cut_in_gap": 8.0,
+        "cut_in_speed": 7.8,
+        "lateral_speed": 2.0,
+        "lateral_offset": 2.5,
+        "cut_in_step": 15
+      },
+      "metrics": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 3.337,
+        "emergency_braking_count": 0,
+        "task_completed": true,
+        "unnecessary_intervention": false,
+        "elapsed_time": 5.8
+      }
+    },
+    {
+      "scenario": "autorickshaw_cut_in",
+      "seed": 1101,
+      "policy": "calibrated_uncertainty",
+      "configuration": {
+        "ego_speed": 10.0,
+        "cut_in_gap": 8.0,
+        "cut_in_speed": 7.8,
+        "lateral_speed": 2.0,
+        "lateral_offset": 2.5,
+        "cut_in_step": 15
+      },
+      "metrics": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 2.787,
+        "emergency_braking_count": 0,
+        "task_completed": true,
+        "unnecessary_intervention": false,
+        "elapsed_time": 5.7
+      }
+    },
+    {
+      "scenario": "autorickshaw_cut_in",
+      "seed": 1102,
+      "policy": "calibrated_uncertainty",
+      "configuration": {
+        "ego_speed": 10.0,
+        "cut_in_gap": 8.0,
+        "cut_in_speed": 7.8,
+        "lateral_speed": 2.0,
+        "lateral_offset": 2.5,
+        "cut_in_step": 15
+      },
+      "metrics": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 2.787,
+        "emergency_braking_count": 0,
+        "task_completed": true,
+        "unnecessary_intervention": false,
+        "elapsed_time": 5.7
+      }
+    },
+    {
+      "scenario": "animal_entry",
+      "seed": 1101,
+      "policy": "reactive",
+      "configuration": {
+        "ego_speed": 10.0,
+        "animal_start_distance": 25.0,
+        "animal_entry_time": 1.5,
+        "animal_direction": -1.0,
+        "animal_speed": 2.0,
+        "animal_length": 1.2,
+        "animal_width": 0.7
+      },
+      "metrics": {
+        "collision": true,
+        "near_collision": true,
+        "min_separation": 0.0,
+        "emergency_braking_count": 9,
+        "task_completed": false,
+        "unnecessary_intervention": false,
+        "elapsed_time": 3.0
+      }
+    },
+    {
+      "scenario": "animal_entry",
+      "seed": 1102,
+      "policy": "reactive",
+      "configuration": {
+        "ego_speed": 10.0,
+        "animal_start_distance": 25.0,
+        "animal_entry_time": 1.5,
+        "animal_direction": -1.0,
+        "animal_speed": 2.0,
+        "animal_length": 1.2,
+        "animal_width": 0.7
+      },
+      "metrics": {
+        "collision": true,
+        "near_collision": true,
+        "min_separation": 0.0,
+        "emergency_braking_count": 9,
+        "task_completed": false,
+        "unnecessary_intervention": false,
+        "elapsed_time": 3.0
+      }
+    },
+    {
+      "scenario": "animal_entry",
+      "seed": 1101,
+      "policy": "prediction_aware",
+      "configuration": {
+        "ego_speed": 10.0,
+        "animal_start_distance": 25.0,
+        "animal_entry_time": 1.5,
+        "animal_direction": -1.0,
+        "animal_speed": 2.0,
+        "animal_length": 1.2,
+        "animal_width": 0.7
+      },
+      "metrics": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 1.553,
+        "emergency_braking_count": 6,
+        "task_completed": false,
+        "unnecessary_intervention": true,
+        "elapsed_time": 6.0
+      }
+    },
+    {
+      "scenario": "animal_entry",
+      "seed": 1102,
+      "policy": "prediction_aware",
+      "configuration": {
+        "ego_speed": 10.0,
+        "animal_start_distance": 25.0,
+        "animal_entry_time": 1.5,
+        "animal_direction": -1.0,
+        "animal_speed": 2.0,
+        "animal_length": 1.2,
+        "animal_width": 0.7
+      },
+      "metrics": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 1.666,
+        "emergency_braking_count": 7,
+        "task_completed": false,
+        "unnecessary_intervention": true,
+        "elapsed_time": 6.0
+      }
+    },
+    {
+      "scenario": "animal_entry",
+      "seed": 1101,
+      "policy": "calibrated_uncertainty",
+      "configuration": {
+        "ego_speed": 10.0,
+        "animal_start_distance": 25.0,
+        "animal_entry_time": 1.5,
+        "animal_direction": -1.0,
+        "animal_speed": 2.0,
+        "animal_length": 1.2,
+        "animal_width": 0.7
+      },
+      "metrics": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 3.71,
+        "emergency_braking_count": 0,
+        "task_completed": false,
+        "unnecessary_intervention": false,
+        "elapsed_time": 6.0
+      }
+    },
+    {
+      "scenario": "animal_entry",
+      "seed": 1102,
+      "policy": "calibrated_uncertainty",
+      "configuration": {
+        "ego_speed": 10.0,
+        "animal_start_distance": 25.0,
+        "animal_entry_time": 1.5,
+        "animal_direction": -1.0,
+        "animal_speed": 2.0,
+        "animal_length": 1.2,
+        "animal_width": 0.7
+      },
+      "metrics": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 3.703,
+        "emergency_braking_count": 0,
+        "task_completed": false,
+        "unnecessary_intervention": false,
+        "elapsed_time": 6.0
+      }
+    },
+    {
+      "scenario": "pedestrian_crossing",
+      "seed": 1201,
+      "policy": "reactive",
+      "configuration": {
+        "ego_speed": 10.0,
+        "ped_speed": 1.2,
+        "ped_start_distance": 25.0,
+        "crossing_time": 1.0,
+        "has_hesitation": false
+      },
+      "metrics": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 2.883,
+        "emergency_braking_count": 11,
+        "task_completed": false,
+        "unnecessary_intervention": true,
+        "elapsed_time": 6.0
+      }
+    },
+    {
+      "scenario": "pedestrian_crossing",
+      "seed": 1202,
+      "policy": "reactive",
+      "configuration": {
+        "ego_speed": 10.0,
+        "ped_speed": 1.2,
+        "ped_start_distance": 25.0,
+        "crossing_time": 1.0,
+        "has_hesitation": false
+      },
+      "metrics": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 2.938,
+        "emergency_braking_count": 11,
+        "task_completed": false,
+        "unnecessary_intervention": true,
+        "elapsed_time": 6.0
+      }
+    },
+    {
+      "scenario": "pedestrian_crossing",
+      "seed": 1203,
+      "policy": "reactive",
+      "configuration": {
+        "ego_speed": 10.0,
+        "ped_speed": 1.2,
+        "ped_start_distance": 25.0,
+        "crossing_time": 1.0,
+        "has_hesitation": false
+      },
+      "metrics": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 3.091,
+        "emergency_braking_count": 12,
+        "task_completed": false,
+        "unnecessary_intervention": true,
+        "elapsed_time": 6.0
+      }
+    },
+    {
+      "scenario": "pedestrian_crossing",
+      "seed": 1201,
+      "policy": "prediction_aware",
+      "configuration": {
+        "ego_speed": 10.0,
+        "ped_speed": 1.2,
+        "ped_start_distance": 25.0,
+        "crossing_time": 1.0,
+        "has_hesitation": false
+      },
+      "metrics": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 1.943,
+        "emergency_braking_count": 3,
+        "task_completed": false,
+        "unnecessary_intervention": false,
+        "elapsed_time": 6.0
+      }
+    },
+    {
+      "scenario": "pedestrian_crossing",
+      "seed": 1202,
+      "policy": "prediction_aware",
+      "configuration": {
+        "ego_speed": 10.0,
+        "ped_speed": 1.2,
+        "ped_start_distance": 25.0,
+        "crossing_time": 1.0,
+        "has_hesitation": false
+      },
+      "metrics": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 1.983,
+        "emergency_braking_count": 3,
+        "task_completed": false,
+        "unnecessary_intervention": true,
+        "elapsed_time": 6.0
+      }
+    },
+    {
+      "scenario": "pedestrian_crossing",
+      "seed": 1203,
+      "policy": "prediction_aware",
+      "configuration": {
+        "ego_speed": 10.0,
+        "ped_speed": 1.2,
+        "ped_start_distance": 25.0,
+        "crossing_time": 1.0,
+        "has_hesitation": false
+      },
+      "metrics": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 1.939,
+        "emergency_braking_count": 4,
+        "task_completed": false,
+        "unnecessary_intervention": false,
+        "elapsed_time": 6.0
+      }
+    },
+    {
+      "scenario": "pedestrian_crossing",
+      "seed": 1201,
+      "policy": "calibrated_uncertainty",
+      "configuration": {
+        "ego_speed": 10.0,
+        "ped_speed": 1.2,
+        "ped_start_distance": 25.0,
+        "crossing_time": 1.0,
+        "has_hesitation": false
+      },
+      "metrics": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 3.373,
+        "emergency_braking_count": 0,
+        "task_completed": false,
+        "unnecessary_intervention": false,
+        "elapsed_time": 6.0
+      }
+    },
+    {
+      "scenario": "pedestrian_crossing",
+      "seed": 1202,
+      "policy": "calibrated_uncertainty",
+      "configuration": {
+        "ego_speed": 10.0,
+        "ped_speed": 1.2,
+        "ped_start_distance": 25.0,
+        "crossing_time": 1.0,
+        "has_hesitation": false
+      },
+      "metrics": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 3.458,
+        "emergency_braking_count": 0,
+        "task_completed": false,
+        "unnecessary_intervention": false,
+        "elapsed_time": 6.0
+      }
+    },
+    {
+      "scenario": "pedestrian_crossing",
+      "seed": 1203,
+      "policy": "calibrated_uncertainty",
+      "configuration": {
+        "ego_speed": 10.0,
+        "ped_speed": 1.2,
+        "ped_start_distance": 25.0,
+        "crossing_time": 1.0,
+        "has_hesitation": false
+      },
+      "metrics": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 3.244,
+        "emergency_braking_count": 0,
+        "task_completed": false,
+        "unnecessary_intervention": false,
+        "elapsed_time": 6.0
+      }
+    },
+    {
+      "scenario": "autorickshaw_cut_in",
+      "seed": 1201,
+      "policy": "reactive",
+      "configuration": {
+        "ego_speed": 10.0,
+        "cut_in_gap": 8.0,
+        "cut_in_speed": 7.8,
+        "lateral_speed": 2.0,
+        "lateral_offset": 2.5,
+        "cut_in_step": 15
+      },
+      "metrics": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 3.352,
+        "emergency_braking_count": 0,
+        "task_completed": true,
+        "unnecessary_intervention": false,
+        "elapsed_time": 5.9
+      }
+    },
+    {
+      "scenario": "autorickshaw_cut_in",
+      "seed": 1202,
+      "policy": "reactive",
+      "configuration": {
+        "ego_speed": 10.0,
+        "cut_in_gap": 8.0,
+        "cut_in_speed": 7.8,
+        "lateral_speed": 2.0,
+        "lateral_offset": 2.5,
+        "cut_in_step": 15
+      },
+      "metrics": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 3.352,
+        "emergency_braking_count": 0,
+        "task_completed": true,
+        "unnecessary_intervention": false,
+        "elapsed_time": 5.9
+      }
+    },
+    {
+      "scenario": "autorickshaw_cut_in",
+      "seed": 1203,
+      "policy": "reactive",
+      "configuration": {
+        "ego_speed": 10.0,
+        "cut_in_gap": 8.0,
+        "cut_in_speed": 7.8,
+        "lateral_speed": 2.0,
+        "lateral_offset": 2.5,
+        "cut_in_step": 15
+      },
+      "metrics": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 3.352,
+        "emergency_braking_count": 0,
+        "task_completed": true,
+        "unnecessary_intervention": false,
+        "elapsed_time": 5.9
+      }
+    },
+    {
+      "scenario": "autorickshaw_cut_in",
+      "seed": 1201,
+      "policy": "prediction_aware",
+      "configuration": {
+        "ego_speed": 10.0,
+        "cut_in_gap": 8.0,
+        "cut_in_speed": 7.8,
+        "lateral_speed": 2.0,
+        "lateral_offset": 2.5,
+        "cut_in_step": 15
+      },
+      "metrics": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 3.337,
+        "emergency_braking_count": 0,
+        "task_completed": true,
+        "unnecessary_intervention": false,
+        "elapsed_time": 5.8
+      }
+    },
+    {
+      "scenario": "autorickshaw_cut_in",
+      "seed": 1202,
+      "policy": "prediction_aware",
+      "configuration": {
+        "ego_speed": 10.0,
+        "cut_in_gap": 8.0,
+        "cut_in_speed": 7.8,
+        "lateral_speed": 2.0,
+        "lateral_offset": 2.5,
+        "cut_in_step": 15
+      },
+      "metrics": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 3.337,
+        "emergency_braking_count": 0,
+        "task_completed": true,
+        "unnecessary_intervention": false,
+        "elapsed_time": 5.8
+      }
+    },
+    {
+      "scenario": "autorickshaw_cut_in",
+      "seed": 1203,
+      "policy": "prediction_aware",
+      "configuration": {
+        "ego_speed": 10.0,
+        "cut_in_gap": 8.0,
+        "cut_in_speed": 7.8,
+        "lateral_speed": 2.0,
+        "lateral_offset": 2.5,
+        "cut_in_step": 15
+      },
+      "metrics": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 3.337,
+        "emergency_braking_count": 0,
+        "task_completed": true,
+        "unnecessary_intervention": false,
+        "elapsed_time": 5.8
+      }
+    },
+    {
+      "scenario": "autorickshaw_cut_in",
+      "seed": 1201,
+      "policy": "calibrated_uncertainty",
+      "configuration": {
+        "ego_speed": 10.0,
+        "cut_in_gap": 8.0,
+        "cut_in_speed": 7.8,
+        "lateral_speed": 2.0,
+        "lateral_offset": 2.5,
+        "cut_in_step": 15
+      },
+      "metrics": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 2.787,
+        "emergency_braking_count": 0,
+        "task_completed": true,
+        "unnecessary_intervention": false,
+        "elapsed_time": 5.7
+      }
+    },
+    {
+      "scenario": "autorickshaw_cut_in",
+      "seed": 1202,
+      "policy": "calibrated_uncertainty",
+      "configuration": {
+        "ego_speed": 10.0,
+        "cut_in_gap": 8.0,
+        "cut_in_speed": 7.8,
+        "lateral_speed": 2.0,
+        "lateral_offset": 2.5,
+        "cut_in_step": 15
+      },
+      "metrics": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 2.787,
+        "emergency_braking_count": 0,
+        "task_completed": true,
+        "unnecessary_intervention": false,
+        "elapsed_time": 5.7
+      }
+    },
+    {
+      "scenario": "autorickshaw_cut_in",
+      "seed": 1203,
+      "policy": "calibrated_uncertainty",
+      "configuration": {
+        "ego_speed": 10.0,
+        "cut_in_gap": 8.0,
+        "cut_in_speed": 7.8,
+        "lateral_speed": 2.0,
+        "lateral_offset": 2.5,
+        "cut_in_step": 15
+      },
+      "metrics": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 2.787,
+        "emergency_braking_count": 0,
+        "task_completed": true,
+        "unnecessary_intervention": false,
+        "elapsed_time": 5.7
+      }
+    },
+    {
+      "scenario": "animal_entry",
+      "seed": 1201,
+      "policy": "reactive",
+      "configuration": {
+        "ego_speed": 10.0,
+        "animal_start_distance": 25.0,
+        "animal_entry_time": 1.5,
+        "animal_direction": -1.0,
+        "animal_speed": 2.0,
+        "animal_length": 1.2,
+        "animal_width": 0.7
+      },
+      "metrics": {
+        "collision": true,
+        "near_collision": true,
+        "min_separation": 0.0,
+        "emergency_braking_count": 9,
+        "task_completed": false,
+        "unnecessary_intervention": false,
+        "elapsed_time": 3.0
+      }
+    },
+    {
+      "scenario": "animal_entry",
+      "seed": 1202,
+      "policy": "reactive",
+      "configuration": {
+        "ego_speed": 10.0,
+        "animal_start_distance": 25.0,
+        "animal_entry_time": 1.5,
+        "animal_direction": -1.0,
+        "animal_speed": 2.0,
+        "animal_length": 1.2,
+        "animal_width": 0.7
+      },
+      "metrics": {
+        "collision": true,
+        "near_collision": true,
+        "min_separation": 0.0,
+        "emergency_braking_count": 9,
+        "task_completed": false,
+        "unnecessary_intervention": false,
+        "elapsed_time": 3.0
+      }
+    },
+    {
+      "scenario": "animal_entry",
+      "seed": 1203,
+      "policy": "reactive",
+      "configuration": {
+        "ego_speed": 10.0,
+        "animal_start_distance": 25.0,
+        "animal_entry_time": 1.5,
+        "animal_direction": -1.0,
+        "animal_speed": 2.0,
+        "animal_length": 1.2,
+        "animal_width": 0.7
+      },
+      "metrics": {
+        "collision": true,
+        "near_collision": true,
+        "min_separation": 0.0,
+        "emergency_braking_count": 9,
+        "task_completed": false,
+        "unnecessary_intervention": false,
+        "elapsed_time": 3.0
+      }
+    },
+    {
+      "scenario": "animal_entry",
+      "seed": 1201,
+      "policy": "prediction_aware",
+      "configuration": {
+        "ego_speed": 10.0,
+        "animal_start_distance": 25.0,
+        "animal_entry_time": 1.5,
+        "animal_direction": -1.0,
+        "animal_speed": 2.0,
+        "animal_length": 1.2,
+        "animal_width": 0.7
+      },
+      "metrics": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 1.643,
+        "emergency_braking_count": 6,
+        "task_completed": false,
+        "unnecessary_intervention": true,
+        "elapsed_time": 6.0
+      }
+    },
+    {
+      "scenario": "animal_entry",
+      "seed": 1202,
+      "policy": "prediction_aware",
+      "configuration": {
+        "ego_speed": 10.0,
+        "animal_start_distance": 25.0,
+        "animal_entry_time": 1.5,
+        "animal_direction": -1.0,
+        "animal_speed": 2.0,
+        "animal_length": 1.2,
+        "animal_width": 0.7
+      },
+      "metrics": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 1.524,
+        "emergency_braking_count": 6,
+        "task_completed": false,
+        "unnecessary_intervention": true,
+        "elapsed_time": 6.0
+      }
+    },
+    {
+      "scenario": "animal_entry",
+      "seed": 1203,
+      "policy": "prediction_aware",
+      "configuration": {
+        "ego_speed": 10.0,
+        "animal_start_distance": 25.0,
+        "animal_entry_time": 1.5,
+        "animal_direction": -1.0,
+        "animal_speed": 2.0,
+        "animal_length": 1.2,
+        "animal_width": 0.7
+      },
+      "metrics": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 1.714,
+        "emergency_braking_count": 6,
+        "task_completed": false,
+        "unnecessary_intervention": true,
+        "elapsed_time": 6.0
+      }
+    },
+    {
+      "scenario": "animal_entry",
+      "seed": 1201,
+      "policy": "calibrated_uncertainty",
+      "configuration": {
+        "ego_speed": 10.0,
+        "animal_start_distance": 25.0,
+        "animal_entry_time": 1.5,
+        "animal_direction": -1.0,
+        "animal_speed": 2.0,
+        "animal_length": 1.2,
+        "animal_width": 0.7
+      },
+      "metrics": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 3.724,
+        "emergency_braking_count": 0,
+        "task_completed": false,
+        "unnecessary_intervention": false,
+        "elapsed_time": 6.0
+      }
+    },
+    {
+      "scenario": "animal_entry",
+      "seed": 1202,
+      "policy": "calibrated_uncertainty",
+      "configuration": {
+        "ego_speed": 10.0,
+        "animal_start_distance": 25.0,
+        "animal_entry_time": 1.5,
+        "animal_direction": -1.0,
+        "animal_speed": 2.0,
+        "animal_length": 1.2,
+        "animal_width": 0.7
+      },
+      "metrics": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 3.685,
+        "emergency_braking_count": 0,
+        "task_completed": false,
+        "unnecessary_intervention": false,
+        "elapsed_time": 6.0
+      }
+    },
+    {
+      "scenario": "animal_entry",
+      "seed": 1203,
+      "policy": "calibrated_uncertainty",
+      "configuration": {
+        "ego_speed": 10.0,
+        "animal_start_distance": 25.0,
+        "animal_entry_time": 1.5,
+        "animal_direction": -1.0,
+        "animal_speed": 2.0,
+        "animal_length": 1.2,
+        "animal_width": 0.7
+      },
+      "metrics": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation": 3.73,
+        "emergency_braking_count": 0,
+        "task_completed": false,
+        "unnecessary_intervention": false,
+        "elapsed_time": 6.0
+      }
+    }
+  ]
+}

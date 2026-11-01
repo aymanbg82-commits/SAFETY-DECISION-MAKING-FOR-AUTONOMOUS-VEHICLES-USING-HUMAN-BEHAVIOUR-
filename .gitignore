@@ -1,0 +1,34 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environments
+.venv/
+env/
+venv/
+ENV/
+
+# Large datasets & binaries
+data/raw/*
+!data/raw/README.md
+!data/raw/sample_manifest.json
+data/processed/*
+!data/processed/README.md
+data/synthetic/*.parquet
+data/synthetic/*.csv
+!data/synthetic/README.md
+
+# Model checkpoints
+outputs/checkpoints/*.pt
+outputs/checkpoints/*.pth
+!outputs/checkpoints/README.md
+
+# Logs & temp
+*.log
+.DS_Store
+Thumbs.db

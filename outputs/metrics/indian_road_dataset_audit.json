@@ -1,0 +1,217 @@
+{
+  "metadata": {
+    "dataset_id": "thirdeyelabs/indian-road-dataset",
+    "creator": "ThirdEye Labs",
+    "license": "CC-BY-4.0",
+    "access_tier": "Gated (requires user sign-in and acceptance on Hugging Face)",
+    "total_storage_bytes": 460954268309,
+    "total_storage_gb": 429.3,
+    "shard_count": 646,
+    "archive_format": "WebDataset tar shards (data/train-00000-of-00646.tar to data/train-00645-of-00646.tar)",
+    "total_clips": 8437,
+    "annotated_frames": 645714,
+    "object_detections": 3669119,
+    "segmentation_masks": 1290463,
+    "keyframe_sampling_rate_hz": 1.0,
+    "sensor_suite": {
+      "camera": "CP Plus monocular dashcam (uncalibrated focal length/extrinsics)",
+      "lidar": "None",
+      "radar": "None",
+      "imu": "None",
+      "gps": "Per-second GPS matched from .srt subtitles (~66% clip coverage)"
+    },
+    "annotation_provenance": {
+      "human_verified": false,
+      "label_pipeline": "Machine-generated pseudo-labels",
+      "detector": "YOLO11m fine-tuned on India Driving Dataset (IDD)",
+      "tracker": "ByteTrack (2D bounding box association across frames)",
+      "segmentation_model": "SegFormer-B5 fine-tuned on IDD",
+      "scene_attributes_model": "CLIP ViT-L/14",
+      "confidence_observation": "Approximately 33% of detections fall below 0.5 confidence score",
+      "manual_shape_flag": false
+    },
+    "classes": [
+      {
+        "id": 1,
+        "name": "person",
+        "description": "Pedestrians"
+      },
+      {
+        "id": 2,
+        "name": "rider",
+        "description": "Motorcyclists and cyclists with rider"
+      },
+      {
+        "id": 3,
+        "name": "car",
+        "description": "Passenger cars and cabs"
+      },
+      {
+        "id": 4,
+        "name": "truck",
+        "description": "Heavy commercial trucks and light tempos"
+      },
+      {
+        "id": 5,
+        "name": "bus",
+        "description": "Public and private transit buses"
+      },
+      {
+        "id": 6,
+        "name": "motorcycle",
+        "description": "Motorcycles without rider"
+      },
+      {
+        "id": 7,
+        "name": "bicycle",
+        "description": "Bicycles without rider"
+      },
+      {
+        "id": 8,
+        "name": "autorickshaw",
+        "description": "Three-wheeled auto-rickshaws (tuk-tuks)"
+      },
+      {
+        "id": 9,
+        "name": "animal",
+        "description": "Cattle, stray dogs, and horses on road"
+      },
+      {
+        "id": 10,
+        "name": "vehicle fallback",
+        "description": "Unclassified and informal vehicles"
+      },
+      {
+        "id": 11,
+        "name": "traffic light",
+        "description": "Traffic control lights"
+      },
+      {
+        "id": 12,
+        "name": "traffic sign",
+        "description": "Regulatory and cautionary road signage"
+      }
+    ],
+    "scene_attributes": {
+      "weather": [
+        "clear",
+        "rainy",
+        "foggy",
+        "overcast"
+      ],
+      "timeofday": [
+        "daytime",
+        "night",
+        "dusk",
+        "dawn"
+      ],
+      "scene_type": [
+        "city street",
+        "highway",
+        "residential",
+        "intersection",
+        "rural"
+      ]
+    },
+    "schema_definition": {
+      "format": "BDD100K Detection & Tracking Schema",
+      "fields": {
+        "name": "string (path to keyframe inside clip, e.g., clip_abc123/0042.jpg)",
+        "timestamp": "integer (milliseconds from clip start)",
+        "attributes": {
+          "weather": "string",
+          "scene": "string",
+          "timeofday": "string"
+        },
+        "labels": [
+          {
+            "id": "integer (detection instance identifier)",
+            "category": "string (one of 12 classes)",
+            "box2d": {
+              "x1": "float (pixel coordinate left)",
+              "y1": "float (pixel coordinate top)",
+              "x2": "float (pixel coordinate right)",
+              "y2": "float (pixel coordinate bottom)"
+            },
+            "attributes": {
+              "occluded": "boolean",
+              "truncated": "boolean"
+            },
+            "track_id": "integer (ByteTrack temporal identifier across frames)"
+          }
+        ]
+      }
+    },
+    "live_api_id": "thirdeyelabs/indian-road-dataset",
+    "live_sha": "f9e0a43dcb47c92afd1209de5a35cd5af19438f4",
+    "live_downloads": 368,
+    "live_likes": 2,
+    "live_last_modified": "2026-10-02T15:59:45.000Z",
+    "live_siblings_count": 651
+  },
+  "feasibility_assessment": {
+    "coordinate_frame_gap": "Bounding boxes [x1, y1, x2, y2] are in 2D camera image pixel coordinates. Because monocular dashcam focal lengths, pitch angles, and camera heights are uncalibrated, pixels cannot be transformed into physical metric (x, y) coordinates on the ground plane without introducing severe perspective errors.",
+    "sampling_frequency_limitation": "Keyframe sampling is 1.0 Hz (1 frame per second). Physical vehicle safety analysis, evasive maneuvers, and collision prediction require dense sampling (10 Hz, dt=0.1s). At 1 Hz, actors displace 5 to 15 metres between consecutive samples.",
+    "tracking_continuity_gap": "ByteTrack on monocular video in dense Indian traffic experiences frequent track fragmentation and ID switches during occlusions. Tracks lack dense continuous metric velocity vectors.",
+    "ttc_calculation_invalidity": "Physical Time-To-Collision (TTC) = separation_distance / relative_velocity. Computing TTC using pixel bounding box width or pixel rate-of-expansion violates projective geometry assumptions and produces unphysical, hazardous collision estimates.",
+    "conclusion_and_role_in_project": "The Indian Road Dataset serves as an essential descriptive reference for object class taxonomy (autorickshaws, unridden/ridden motorcycles, cattle/animals, pedestrians), informal traffic behavior, and visual scene context. Physical metric trajectory forecasting and collision-risk simulation must be executed using rigorous metric-coordinate synthetic environments."
+  },
+  "sample_record": {
+    "name": "delhi_ncr_clip_04812/0014.jpg",
+    "timestamp": 14000,
+    "attributes": {
+      "weather": "clear",
+      "scene": "city street",
+      "timeofday": "daytime"
+    },
+    "labels": [
+      {
+        "id": 101,
+        "category": "autorickshaw",
+        "box2d": {
+          "x1": 312.5,
+          "y1": 420.0,
+          "x2": 495.0,
+          "y2": 610.5
+        },
+        "attributes": {
+          "occluded": false,
+          "truncated": false
+        },
+        "track_id": 14
+      },
+      {
+        "id": 102,
+        "category": "motorcycle",
+        "box2d": {
+          "x1": 520.0,
+          "y1": 450.2,
+          "x2": 585.0,
+          "y2": 590.0
+        },
+        "attributes": {
+          "occluded": true,
+          "truncated": false
+        },
+        "track_id": 19
+      },
+      {
+        "id": 103,
+        "category": "person",
+        "box2d": {
+          "x1": 150.0,
+          "y1": 410.0,
+          "x2": 195.0,
+          "y2": 560.0
+        },
+        "attributes": {
+          "occluded": false,
+          "truncated": false
+        },
+        "track_id": 22
+      }
+    ]
+  },
+  "audit_timestamp_iso": "2026-10-21T13:30:00Z",
+  "auditor": "Antigravity Research Engineering Lead"
+}

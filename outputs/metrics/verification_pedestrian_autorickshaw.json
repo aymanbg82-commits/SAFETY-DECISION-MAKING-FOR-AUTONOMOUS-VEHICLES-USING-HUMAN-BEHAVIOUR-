@@ -1,0 +1,134 @@
+{
+  "label": "SYNTHETIC_INDIAN_ROAD_SIMULATION",
+  "verified_on": "2026-10-22",
+  "pedestrian_crossing": {
+    "easy": {
+      "configuration": {
+        "speed_kmh": 36.0,
+        "ped_start_distance_m": 60.0,
+        "ped_speed_mps": 1.2,
+        "crossing_time_s": 0.0,
+        "seed": 42,
+        "policy": "reactive"
+      },
+      "metrics": {
+        "collision": false,
+        "near_collision": true,
+        "min_separation_m": 1.396,
+        "emergency_braking_count": 4,
+        "task_completed": false,
+        "unnecessary_intervention": false,
+        "elapsed_time_s": 6.0
+      }
+    },
+    "close": {
+      "configuration": {
+        "speed_kmh": 36.0,
+        "ped_start_distance_m": 15.0,
+        "ped_speed_mps": 1.2,
+        "crossing_time_s": 0.0,
+        "seed": 42,
+        "policy": "reactive"
+      },
+      "metrics": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation_m": 3.033,
+        "emergency_braking_count": 11,
+        "task_completed": false,
+        "unnecessary_intervention": true,
+        "elapsed_time_s": 6.0
+      }
+    },
+    "late_entry": {
+      "configuration": {
+        "speed_kmh": 36.0,
+        "ped_start_distance_m": 25.0,
+        "ped_speed_mps": 2.0,
+        "crossing_time_s": 3.0,
+        "seed": 42,
+        "policy": "reactive"
+      },
+      "metrics": {
+        "collision": false,
+        "near_collision": false,
+        "min_separation_m": 1.876,
+        "emergency_braking_count": 6,
+        "task_completed": false,
+        "unnecessary_intervention": false,
+        "elapsed_time_s": 6.0
+      }
+    },
+    "slow_crossing": {
+      "configuration": {
+        "speed_kmh": 36.0,
+        "ped_start_distance_m": 25.0,
+        "ped_speed_mps": 0.5,
+        "crossing_time_s": 1.0,
+        "seed": 42,
+        "policy": "reactive"
+      },
+      "metrics": {
+        "collision": false,
+        "near_collision": true,
+        "min_separation_m": 0.067,
+        "emergency_braking_count": 39,
+        "task_completed": false,
+        "unnecessary_intervention": false,
+        "elapsed_time_s": 6.0
+      }
+    }
+  },
+  "matched_pedestrian_policies": {
+    "configuration": {
+      "speed_kmh": 36.0,
+      "ped_start_distance_m": 25.0,
+      "ped_speed_mps": 1.2,
+      "crossing_time_s": 1.0,
+      "seed": 77
+    },
+    "reactive": {
+      "collision": false,
+      "near_collision": false,
+      "min_separation_m": 2.857,
+      "emergency_braking_count": 11,
+      "task_completed": false
+    },
+    "prediction_aware": {
+      "collision": false,
+      "near_collision": false,
+      "min_separation_m": 1.878,
+      "emergency_braking_count": 3,
+      "task_completed": false
+    }
+  },
+  "matched_autorickshaw_policies": {
+    "configuration": {
+      "speed_kmh": 36.0,
+      "cut_in_gap_m": 8.0,
+      "cut_in_speed_kmh": 28.0,
+      "lateral_speed_mps": 2.0,
+      "lateral_offset_m": 2.5,
+      "cut_in_time_s": 1.5,
+      "seed": 42
+    },
+    "reactive": {
+      "collision": false,
+      "near_collision": false,
+      "min_separation_m": 3.333,
+      "emergency_braking_count": 0,
+      "task_completed": true,
+      "unnecessary_intervention": false,
+      "elapsed_time_s": 5.9
+    },
+    "prediction_aware": {
+      "collision": false,
+      "near_collision": false,
+      "min_separation_m": 3.347,
+      "emergency_braking_count": 0,
+      "task_completed": true,
+      "unnecessary_intervention": false,
+      "elapsed_time_s": 5.8
+    }
+  }
+}

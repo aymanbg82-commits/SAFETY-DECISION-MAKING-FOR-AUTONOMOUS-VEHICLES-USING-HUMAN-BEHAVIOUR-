@@ -1,0 +1,54 @@
+{
+  "Reactive_Baseline": {
+    "num_episodes_evaluated": 40,
+    "collision_count": 0,
+    "collision_rate_percent": 0.0,
+    "collisions_per_1000_episodes": 0.0,
+    "near_collision_rate_percent": 75.0,
+    "task_completion_rate_percent": 25.0,
+    "unnecessary_intervention_rate_percent": 45.0,
+    "mean_minimum_separation_meters": 1.198,
+    "std_minimum_separation_meters": 0.852,
+    "mean_emergency_actions_per_ep": 9.32,
+    "mean_elapsed_time_seconds": 5.72
+  },
+  "Prediction_Aware_CV": {
+    "num_episodes_evaluated": 40,
+    "collision_count": 0,
+    "collision_rate_percent": 0.0,
+    "collisions_per_1000_episodes": 0.0,
+    "near_collision_rate_percent": 37.5,
+    "task_completion_rate_percent": 25.0,
+    "unnecessary_intervention_rate_percent": 0.0,
+    "mean_minimum_separation_meters": 3.323,
+    "std_minimum_separation_meters": 1.994,
+    "mean_emergency_actions_per_ep": 1.35,
+    "mean_elapsed_time_seconds": 5.65
+  },
+  "Prediction_Aware_GRU": {
+    "num_episodes_evaluated": 40,
+    "collision_count": 0,
+    "collision_rate_percent": 0.0,
+    "collisions_per_1000_episodes": 0.0,
+    "near_collision_rate_percent": 37.5,
+    "task_completion_rate_percent": 25.0,
+    "unnecessary_intervention_rate_percent": 0.0,
+    "mean_minimum_separation_meters": 3.323,
+    "std_minimum_separation_meters": 1.994,
+    "mean_emergency_actions_per_ep": 1.35,
+    "mean_elapsed_time_seconds": 5.65
+  },
+  "Uncertainty_Aware_Policy": {
+    "num_episodes_evaluated": 40,
+    "collision_count": 0,
+    "collision_rate_percent": 0.0,
+    "collisions_per_1000_episodes": 0.0,
+    "near_collision_rate_percent": 35.0,
+    "task_completion_rate_percent": 25.0,
+    "unnecessary_intervention_rate_percent": 0.0,
+    "mean_minimum_separation_meters": 3.937,
+    "std_minimum_separation_meters": 2.526,
+    "mean_emergency_actions_per_ep": 1.02,
+    "mean_elapsed_time_seconds": 5.65
+  }
+}

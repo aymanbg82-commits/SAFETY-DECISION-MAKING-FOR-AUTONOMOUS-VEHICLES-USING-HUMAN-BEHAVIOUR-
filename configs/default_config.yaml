@@ -1,0 +1,90 @@
+# Master Configuration for Trajectory Prediction and Risk Analysis
+
+simulation:
+  time_step: 0.1          # 10 Hz sampling rate (seconds)
+  observation_steps: 20   # 2.0 seconds observation horizon (history)
+  forecast_steps: 30      # 3.0 seconds forecast horizon (future)
+  coordinate_frame: "metric_2d_meters"
+  world_bounds:
+    x_min: -50.0
+    x_max: 100.0
+    y_min: -25.0
+    y_max: 25.0
+
+scenarios:
+  supported_types:
+    - "pedestrian_crossing"
+    - "motorcycle_cut_in"
+    - "mixed_traffic_intersection"
+    - "unregulated_overtaking"
+  default_num_episodes: 150
+  random_seed: 42
+
+actor_definitions:
+  car:
+    length: 4.5
+    width: 2.0
+    max_accel: 3.5
+    max_decel: 7.0
+    comfort_decel: 3.0
+  motorcycle:
+    length: 2.2
+    width: 0.9
+    max_accel: 4.5
+    max_decel: 6.5
+    comfort_decel: 2.5
+  auto_rickshaw:
+    length: 2.8
+    width: 1.3
+    max_accel: 2.5
+    max_decel: 5.5
+    comfort_decel: 2.2
+  pedestrian:
+    length: 0.6
+    width: 0.6
+    max_accel: 2.0
+    max_decel: 3.0
+    comfort_decel: 1.5
+
+risk_estimation:
+  collision_distance_threshold: 0.3    # Physical bounding box intersection or buffer < 0.3m
+  near_collision_distance_threshold: 1.5 # Buffer < 1.5m
+  ttc_critical_threshold: 2.0          # Seconds to collision critical warning
+  ttc_warning_threshold: 3.5           # Seconds to collision advisory warning
+  risk_horizon_seconds: 3.0
+  uncertainty_risk_quantile: 0.90      # Conservative risk evaluation quantile
+
+forecasting:
+  observation_features:
+    - "x"
+    - "y"
+    - "vx"
+    - "vy"
+    - "speed"
+    - "heading"
+  output_features:
+    - "dx"
+    - "dy"
+  recurrent:
+    model_type: "GRU"                  # GRU or LSTM
+    hidden_dim: 64
+    num_layers: 2
+    dropout: 0.1
+    learning_rate: 0.001
+    batch_size: 64
+    epochs: 25
+    early_stopping_patience: 5
+  uncertainty:
+    method: "bivariate_gaussian_nll"   # Outputs (mu_x, mu_y, log_sigma_x, log_sigma_y, rho)
+
+policies:
+  target_speed: 11.11                  # 40 km/h in m/s
+  emergency_brake_decel: 6.5           # m/s^2
+  advisory_brake_decel: 2.5            # m/s^2
+  cruising_accel: 1.5                  # m/s^2
+
+splits:
+  train_ratio: 0.70
+  val_ratio: 0.15
+  test_ratio: 0.15
+  split_by: "scenario_id"              # Zero leakage: split by scene/base scenario

@@ -1,0 +1,268 @@
+{
+  "constant_velocity": {
+    "overall_ade_meters": 0.2184,
+    "overall_fde_meters": 0.5083,
+    "breakdown": [
+      {
+        "scenario_type": "mixed_traffic_intersection",
+        "actor_type": "autorickshaw",
+        "sample_count": 18,
+        "mean_ade": 2.241796940675537e-07,
+        "std_ade": 1.4188947831321237e-07,
+        "mean_fde": 3.178914388020833e-07,
+        "std_fde": 7.314348114465431e-07
+      },
+      {
+        "scenario_type": "mixed_traffic_intersection",
+        "actor_type": "car",
+        "sample_count": 18,
+        "mean_ade": 4.1359001793731903e-07,
+        "std_ade": 3.1327380141578896e-07,
+        "mean_fde": 3.178914388020833e-07,
+        "std_fde": 7.314348114465431e-07
+      },
+      {
+        "scenario_type": "mixed_traffic_intersection",
+        "actor_type": "pedestrian",
+        "sample_count": 18,
+        "mean_ade": 0.1577894687652588,
+        "std_ade": 0.014250153779085931,
+        "mean_fde": 0.46219444274902344,
+        "std_fde": 0.035676079259777164
+      },
+      {
+        "scenario_type": "motorcycle_cut_in",
+        "actor_type": "car",
+        "sample_count": 18,
+        "mean_ade": 4.2319297458940735e-07,
+        "std_ade": 2.311493605696901e-07,
+        "mean_fde": 6.357828776041666e-07,
+        "std_fde": 9.251999856427497e-07
+      },
+      {
+        "scenario_type": "motorcycle_cut_in",
+        "actor_type": "motorcycle",
+        "sample_count": 18,
+        "mean_ade": 1.5592438247468736,
+        "std_ade": 0.6106217413854167,
+        "mean_fde": 3.5750936799579196,
+        "std_fde": 1.1594231765380265
+      },
+      {
+        "scenario_type": "pedestrian_crossing",
+        "actor_type": "car",
+        "sample_count": 18,
+        "mean_ade": 0.053874433816721044,
+        "std_ade": 0.04274156929636978,
+        "mean_fde": 0.10086472829182942,
+        "std_fde": 0.08329782587447948
+      },
+      {
+        "scenario_type": "pedestrian_crossing",
+        "actor_type": "pedestrian",
+        "sample_count": 18,
+        "mean_ade": 0.41354153058232945,
+        "std_ade": 0.6894311375819466,
+        "mean_fde": 0.9445004432151715,
+        "std_fde": 1.5285246890052588
+      },
+      {
+        "scenario_type": "unregulated_overtaking",
+        "actor_type": "autorickshaw",
+        "sample_count": 18,
+        "mean_ade": 2.4189551931878367e-07,
+        "std_ade": 1.4642232295408472e-07,
+        "mean_fde": 3.178914388020833e-07,
+        "std_fde": 4.625999928213748e-07
+      },
+      {
+        "scenario_type": "unregulated_overtaking",
+        "actor_type": "car",
+        "sample_count": 36,
+        "mean_ade": 4.967053683913036e-07,
+        "std_ade": 1.832768375584264e-07,
+        "mean_fde": 1.2715657552083333e-06,
+        "std_fde": 1.4418200416916931e-06
+      }
+    ]
+  },
+  "deterministic_gru": {
+    "overall_ade_meters": 0.3734,
+    "overall_fde_meters": 0.7468,
+    "breakdown": [
+      {
+        "scenario_type": "mixed_traffic_intersection",
+        "actor_type": "autorickshaw",
+        "sample_count": 18,
+        "mean_ade": 0.46009038885434467,
+        "std_ade": 0.24231075058783177,
+        "mean_fde": 0.849813848733902,
+        "std_fde": 0.49098204820334945
+      },
+      {
+        "scenario_type": "mixed_traffic_intersection",
+        "actor_type": "car",
+        "sample_count": 18,
+        "mean_ade": 0.14511448393265405,
+        "std_ade": 0.014976334168017389,
+        "mean_fde": 0.3573365757862727,
+        "std_fde": 0.014412269294526166
+      },
+      {
+        "scenario_type": "mixed_traffic_intersection",
+        "actor_type": "pedestrian",
+        "sample_count": 18,
+        "mean_ade": 0.2527858366568883,
+        "std_ade": 0.007083896228569971,
+        "mean_fde": 0.4302950898806254,
+        "std_fde": 0.06138300979504614
+      },
+      {
+        "scenario_type": "motorcycle_cut_in",
+        "actor_type": "car",
+        "sample_count": 18,
+        "mean_ade": 0.14232546587785086,
+        "std_ade": 0.011232653582860864,
+        "mean_fde": 0.3466977874437968,
+        "std_fde": 0.013579587950905213
+      },
+      {
+        "scenario_type": "motorcycle_cut_in",
+        "actor_type": "motorcycle",
+        "sample_count": 18,
+        "mean_ade": 0.73450249267949,
+        "std_ade": 0.424243475018433,
+        "mean_fde": 1.1789572636286418,
+        "std_fde": 0.4994565540186989
+      },
+      {
+        "scenario_type": "pedestrian_crossing",
+        "actor_type": "car",
+        "sample_count": 18,
+        "mean_ade": 0.17892178975873524,
+        "std_ade": 0.035017640926559235,
+        "mean_fde": 0.4134336743089888,
+        "std_fde": 0.059445394456476564
+      },
+      {
+        "scenario_type": "pedestrian_crossing",
+        "actor_type": "pedestrian",
+        "sample_count": 18,
+        "mean_ade": 0.6509012050098844,
+        "std_ade": 0.41234103225490065,
+        "mean_fde": 1.399926119380527,
+        "std_fde": 0.9375540136021506
+      },
+      {
+        "scenario_type": "unregulated_overtaking",
+        "actor_type": "autorickshaw",
+        "sample_count": 18,
+        "mean_ade": 0.2356207991639773,
+        "std_ade": 0.04705798347331701,
+        "mean_fde": 0.6262425482273102,
+        "std_fde": 0.10413679983209574
+      },
+      {
+        "scenario_type": "unregulated_overtaking",
+        "actor_type": "car",
+        "sample_count": 36,
+        "mean_ade": 0.4667537444167667,
+        "std_ade": 0.32718406646955517,
+        "mean_fde": 0.9327614009380341,
+        "std_fde": 0.6096654397082465
+      }
+    ]
+  },
+  "uncertainty_gru": {
+    "overall_ade_meters": 6.7114,
+    "overall_fde_meters": 16.224,
+    "negative_log_likelihood": 1.3105,
+    "coverage_95_percent": 96.87,
+    "mean_ellipse_area_95_m2": 30.558,
+    "coverage_68_percent": 87.67,
+    "mean_ellipse_area_68_m2": 11.623,
+    "breakdown": [
+      {
+        "scenario_type": "mixed_traffic_intersection",
+        "actor_type": "autorickshaw",
+        "sample_count": 18,
+        "mean_ade": 6.5913591384887695,
+        "std_ade": 1.0949101223284472,
+        "mean_fde": 15.622019661797417,
+        "std_fde": 2.2184664755541816
+      },
+      {
+        "scenario_type": "mixed_traffic_intersection",
+        "actor_type": "car",
+        "sample_count": 18,
+        "mean_ade": 4.987254738807678,
+        "std_ade": 0.9859762281785597,
+        "mean_fde": 16.51873779296875,
+        "std_fde": 2.327938479173117
+      },
+      {
+        "scenario_type": "mixed_traffic_intersection",
+        "actor_type": "pedestrian",
+        "sample_count": 18,
+        "mean_ade": 0.12123212466637294,
+        "std_ade": 0.028498986205905207,
+        "mean_fde": 0.2037571676903301,
+        "std_fde": 0.05890981697579869
+      },
+      {
+        "scenario_type": "motorcycle_cut_in",
+        "actor_type": "car",
+        "sample_count": 18,
+        "mean_ade": 5.068102280298869,
+        "std_ade": 0.5642359818544948,
+        "mean_fde": 16.862494150797527,
+        "std_fde": 1.2742342732367795
+      },
+      {
+        "scenario_type": "motorcycle_cut_in",
+        "actor_type": "motorcycle",
+        "sample_count": 18,
+        "mean_ade": 9.347722318437365,
+        "std_ade": 0.7027932327503839,
+        "mean_fde": 24.343926005893284,
+        "std_fde": 1.3371148258386094
+      },
+      {
+        "scenario_type": "pedestrian_crossing",
+        "actor_type": "car",
+        "sample_count": 18,
+        "mean_ade": 6.318953328662449,
+        "std_ade": 1.3263558331064291,
+        "mean_fde": 19.26296181148953,
+        "std_fde": 2.574477669989718
+      },
+      {
+        "scenario_type": "pedestrian_crossing",
+        "actor_type": "pedestrian",
+        "sample_count": 18,
+        "mean_ade": 0.5545771999491586,
+        "std_ade": 0.33159387943889607,
+        "mean_fde": 1.2556553905208905,
+        "std_fde": 0.7746666154613353
+      },
+      {
+        "scenario_type": "unregulated_overtaking",
+        "actor_type": "autorickshaw",
+        "sample_count": 18,
+        "mean_ade": 1.9839022358258565,
+        "std_ade": 0.2608610813314848,
+        "mean_fde": 6.839864280488756,
+        "std_fde": 1.1654954301247775
+      },
+      {
+        "scenario_type": "unregulated_overtaking",
+        "actor_type": "car",
+        "sample_count": 36,
+        "mean_ade": 16.070624788602192,
+        "std_ade": 10.01143117147547,
+        "mean_fde": 30.665411631266277,
+        "std_fde": 11.95827460329565
+      }
+    ]
+  }
+}
